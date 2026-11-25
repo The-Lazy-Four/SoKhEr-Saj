@@ -1,0 +1,1180 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Noto+Serif+Bengali:wght@400;500;600;700&amp;family=Tiro+Bangla:ital@0;1&amp;family=Hind+Siliguri:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.no-scrollbar::-webkit-scrollbar{display:none;}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none;}.gold-gradient-text{background:linear-gradient(135deg,#c59a3f 0%,#f3db98 50%,#b88728 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}.bengali-font{font-family:'Noto Serif Bengali',serif;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#24181a",
+          "inverse-on-surface": "#f5f3f0",
+          "primary-container": "#380811",
+          "secondary": "#9c7627",
+          "surface-bright": "#fcfbfa",
+          "error": "#93000a",
+          "surface-variant": "#eae5e0",
+          "on-error-container": "#93000a",
+          "secondary-container": "#f8e2ad",
+          "surface-container": "#f4efe9",
+          "on-primary-container": "#e8a7ae",
+          "error-container": "#ffdad6",
+          "secondary-fixed": "#ffdea5",
+          "inverse-primary": "#ffb3b6",
+          "on-surface-variant": "#5a4a4b",
+          "tertiary-fixed": "#ece0dd",
+          "on-secondary": "#ffffff",
+          "surface-container-low": "#faf7f2",
+          "outline": "#8a7575",
+          "tertiary-fixed-dim": "#cfc4c1",
+          "inverse-surface": "#2d2a29",
+          "primary": "#240409",
+          "on-tertiary-fixed-variant": "#4c4543",
+          "on-tertiary-fixed": "#201a19",
+          "on-secondary-fixed-variant": "#5d4201",
+          "surface-dim": "#dbdad6",
+          "on-secondary-container": "#785a1a",
+          "tertiary": "#140f0e",
+          "primary-fixed": "#ffdada",
+          "on-primary-fixed-variant": "#763037",
+          "surface-container-lowest": "#ffffff",
+          "on-tertiary-container": "#948a88",
+          "on-primary": "#ffffff",
+          "on-surface": "#1e1718",
+          "surface-container-high": "#ebe4dc",
+          "on-tertiary": "#ffffff",
+          "on-background": "#1e1718",
+          "secondary-fixed-dim": "#e9c176",
+          "on-secondary-fixed": "#261900",
+          "surface-container-highest": "#e3dcd3",
+          "on-error": "#ffffff",
+          "surface-tint": "#93474d",
+          "outline-variant": "#dccfc8",
+          "background": "#fdfbf8",
+          "on-primary-fixed": "#3d040e",
+          "surface": "#fdfbf8",
+          "primary-fixed-dim": "#ffb3b6"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-lg": "1.75rem",
+          "margin-mobile": "1.25rem",
+          "space-xl": "3.5rem",
+          "space-md": "1rem",
+          "margin": "3.5rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter-mobile": "1rem",
+          "gutter": "1.75rem"
+        },
+        "fontFamily": {
+          "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-lg": ["Playfair Display", "serif"],
+          "display-hero-mobile": ["Playfair Display", "serif"],
+          "label-ui": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-lg-mobile": ["Playfair Display", "serif"],
+          "title-editorial": ["Playfair Display", "serif"],
+          "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-sm": ["Playfair Display", "serif"],
+          "headline-md": ["Playfair Display", "serif"],
+          "body-md": ["Plus Jakarta Sans", "sans-serif"],
+          "display-hero": ["Playfair Display", "serif"]
+        },
+        "fontSize": {
+          "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600"}],
+          "headline-lg": ["42px", {"lineHeight": "50px", "letterSpacing": "-0.015em", "fontWeight": "500"}],
+          "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "label-ui": ["13px", {"lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+          "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500"}],
+          "title-editorial": ["19px", {"lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "headline-sm": ["22px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500"}],
+          "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "display-hero": ["56px", {"lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+        }
+      }
+    }
+  };</script></head><body class="bg-[#fcfaf7] font-body-md text-on-surface antialiased selection:bg-[#380811] selection:text-[#fed488]"><header class="fixed top-0 left-0 w-full z-50 bg-[#fdfbf8]/95 backdrop-blur-md shadow-[0_4px_24px_rgba(40,4,10,0.06)] border-b border-[#e9dcce]"><div class="bg-[#2a040b] text-[#f7e5be] py-2 px-margin-mobile lg:px-margin border-b border-[#9c7627]/40"><div class="max-w-7xl mx-auto flex items-center justify-between text-center text-xs tracking-wider"><div class="hidden md:flex items-center gap-2 text-[#e5be74]"><span class="w-1.5 h-1.5 rounded-full bg-[#e5be74] animate-pulse"></span><span class="font-label-caps text-[10px] uppercase tracking-[0.22em] text-[#f5ebd7] font-medium">Kshudiram Nagar • HIT Road, Haldia</span></div><div class="flex-1 flex items-center justify-center gap-3"><span class="text-[#d8a846] text-xs font-serif">✧</span><p class="font-label-caps text-[11px] tracking-[0.22em] text-[#faf3e3] uppercase font-medium">Haldia Flagship Boutique <span class="bengali-font tracking-normal normal-case text-[#f8e2ad] font-normal mx-1.5">◈ আপনার সাজ, আমাদের স্টাইলিং ◈</span> Authentic Cosmetics &amp; Bridal Jewellery</p><span class="text-[#d8a846] text-xs font-serif">✧</span></div><div class="flex items-center gap-2"><a class="bg-[#1ebe5d] hover:bg-[#169d4c] text-white px-3 py-1 rounded-full font-label-caps text-[10px] uppercase font-bold tracking-wider transition-all flex items-center gap-1.5 shadow-sm ring-1 ring-white/20" href="https://wa.me/917001579693" target="_blank"><span class="material-symbols-outlined text-[13px]">chat</span>Concierge Desk</a></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-3 group" data-path="home" href="#"><div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#380811] via-[#240409] to-[#120003] p-[1.5px] shadow-md ring-1 ring-[#c59a3f]/50 flex items-center justify-center"><div class="w-full h-full rounded-full bg-[#2d050c] flex items-center justify-center text-[#e9c176] font-serif font-bold text-sm tracking-tighter">SS</div></div><div class="flex flex-col"><div class="flex items-baseline gap-2.5"><span class="font-headline-sm text-[22px] font-serif text-[#2a040b] tracking-tight group-hover:text-[#9c7627] transition-colors font-bold">Shokher Saaj</span><span class="bengali-font text-[16px] text-[#701c27] font-bold tracking-normal drop-shadow-sm" style="font-family: &quot;Noto Serif Bengali&quot;, &quot;Tiro Bangla&quot;, serif;">শখের সাজ</span></div><span class="font-label-caps text-[9px] text-[#8e6b22] tracking-[0.28em] uppercase font-semibold mt-0.5">Haute Beauty &amp; Bridal Atelier • Haldia</span></div></a></div><div class="hidden lg:flex items-center flex-1 max-w-md mx-6"><div class="relative w-full group"><span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[#8a7575] text-[18px] group-focus-within:text-[#9c7627] transition-colors">search</span><input class="w-full bg-[#f6f2ec] text-[#221819] font-body-sm text-[13px] pl-10 pr-24 py-2.5 rounded-full border border-[#ded4ca] focus:outline-none focus:border-[#9c7627] focus:bg-white focus:ring-1 focus:ring-[#9c7627]/30 transition-all placeholder:text-[#8a7575]" placeholder="Search Maybelline, Minimalist, Kundan chokers..." type="text"><span class="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] uppercase font-label-caps tracking-widest text-[#9c7627] bg-[#fbf6ed] border border-[#e8d5b8] px-2 py-0.5 rounded">Store Stock</span></div></div><div class="flex items-center gap-3 sm:gap-4"><a class="relative p-2 text-[#4f3d3e] hover:text-[#380811] transition-colors rounded-full hover:bg-[#f3ece4]" data-path="wishlist" href="#" title="Wishlist"><span class="material-symbols-outlined text-[23px]">favorite</span><span class="absolute top-1 right-1 w-4 h-4 bg-[#9c7627] text-white font-label-caps text-[9px] rounded-full flex items-center justify-center font-bold shadow-sm">2</span></a><a class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#f7f2eb] border border-[#d8cbbf] hover:border-[#9c7627] hover:bg-white transition-all text-[#3a292b]" data-path="cart" href="#"><span class="relative flex items-center"><span class="material-symbols-outlined text-[21px] text-[#380811]">shopping_bag</span><span class="absolute -top-1.5 -right-1.5 w-4 h-4 bg-[#380811] text-[#f8e2ad] font-label-caps text-[9px] rounded-full flex items-center justify-center font-bold">3</span></span><div class="hidden sm:flex flex-col items-start pl-1 text-left"><span class="font-label-caps text-[9px] uppercase tracking-wider text-[#796365]">Curated Bag</span><span class="font-body-sm text-[13px] font-bold text-[#380811] leading-tight">₹2,490</span></div></a><a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-md bg-[#380811] text-[#f8e2ad] border border-[#c59a3f]/40 font-label-caps text-[11px] uppercase tracking-widest hover:bg-[#250308] hover:border-[#c59a3f] transition-all shadow-sm" href="tel:+917001579693"><span class="material-symbols-outlined text-[15px] text-[#fed488]">call</span><span class="hidden md:inline">Store Desk</span></a></div></div><div class="bg-[#faf6f0] border-t border-[#e8ded3]"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin"><nav class="flex items-center justify-center gap-6 sm:gap-10 py-2.5 overflow-x-auto no-scrollbar text-xs font-label-ui uppercase tracking-wider" data-active-classes="text-primary-container font-semibold border-b-2 border-secondary"><a aria-current="page" class="py-1 whitespace-nowrap text-[#380811] font-bold border-b-2 border-[#9c7627]" data-path="home" href="#">Home</a><a class="py-1 whitespace-nowrap text-[#635153] hover:text-[#380811] transition-colors font-medium" data-path="shop" href="#store-categories">Departments</a><a class="py-1 whitespace-nowrap text-[#635153] hover:text-[#380811] transition-colors font-medium" data-path="product" href="#featured-products">In-Store Bestsellers</a><a class="py-1 whitespace-nowrap text-[#635153] hover:text-[#380811] transition-colors font-medium" data-path="about" href="#haldia-showroom">Flagship Boutique</a><a class="py-1 whitespace-nowrap text-[#635153] hover:text-[#380811] transition-colors font-medium" data-path="reviews" href="#customer-reviews">Reviews (5.0 ★)</a><a class="py-1 whitespace-nowrap text-[#635153] hover:text-[#380811] transition-colors font-medium" data-path="faq" href="#faq">FAQ</a><a class="py-1 whitespace-nowrap text-[#635153] hover:text-[#380811] transition-colors font-medium" data-path="contact" href="#map-location">Location &amp; Maps</a></nav></div></div></header><main class="w-full pt-32 bg-[#fdfbf8] min-h-[calc(100vh-140px)]" style="padding-top: 10.5rem;"><div class="flex flex-col w-full">
+<!-- Hero Section (Haute Editorial Sabyasachi / Vogue Grid) -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-[#faf6f0] via-[#fdfbf8] to-[#f7f2ea] pb-space-xl pt-4 border-b border-[#e9dfd4]">
+<div class="absolute -top-32 -left-24 w-[30rem] h-[30rem] rounded-full bg-[#fed488]/15 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-28 w-[32rem] h-[32rem] rounded-full bg-[#380811]/5 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-md lg:pt-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Hero Left Column: Editorial Prestige -->
+<div class="lg:col-span-7 flex flex-col items-start z-10 pt-2"><div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-[#c59a3f]/40 text-[#380811] mb-4 shadow-[0_2px_10px_rgba(156,118,39,0.08)]"><span class="w-1.5 h-1.5 rounded-full bg-[#9c7627]"></span><span class="font-label-caps text-[10px] tracking-[0.25em] uppercase text-[#8e6b22] font-bold">Bespoke Beauty &amp; Bridal Atelier ◈ Haldia</span></div><div class="flex flex-wrap items-baseline gap-3 mb-2"><span class="bengali-font text-[38px] md:text-[46px] text-[#380811] font-bold tracking-tight drop-shadow-sm leading-none" style="font-family: &quot;Noto Serif Bengali&quot;, &quot;Tiro Bangla&quot;, serif;">শখের সাজ</span><span class="font-serif text-[15px] md:text-[17px] font-semibold tracking-[0.28em] text-[#9c7627] uppercase">SHOKHER SAAJ</span></div><div class="mb-3 pl-3 border-l-2 border-[#9c7627]"><p class="bengali-font text-[20px] md:text-[23px] text-[#701c27] font-semibold tracking-wide leading-relaxed" style="font-family: &quot;Noto Serif Bengali&quot;, &quot;Tiro Bangla&quot;, serif;">“সাজ হোক নিজের মনের মতো।”</p><p class="font-serif italic text-xs md:text-sm text-[#735e60] tracking-wider mt-0.5">Artisanal curation for the discerning bride and modern beauty connoisseur.</p></div><h1 class="font-display-hero text-display-hero-mobile lg:text-[54px] lg:leading-[64px] text-[#220409] font-serif tracking-tight mb-space-md font-medium">Haldia’s Premier Atelier for <span class="italic font-normal text-[#9c7627] underline decoration-[#e5c98d] decoration-1 underline-offset-8">Authentic Cosmetics</span> &amp; Bridal Jewellery.</h1><p class="font-body-lg text-body-lg text-[#554345] max-w-2xl mb-space-lg leading-relaxed font-light">Direct authorized sourcing of international makeup, certified skincare active formulations, and bespoke bridal Kundan-Polki suites. Experience personal shade-matching at our HIT College Road showroom or order via direct concierge delivery across Haldia.</p><div class="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto"><a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded bg-[#380811] text-[#fdedcf] border border-[#c59a3f]/50 font-label-caps text-label-caps uppercase tracking-[0.16em] hover:bg-[#200207] hover:border-[#fed488] transition-all shadow-md group" href="#store-categories"><span class="material-symbols-outlined text-[18px] text-[#e9c176] transition-transform group-hover:rotate-45">grid_view</span><span>Explore Collections</span></a><a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded bg-[#1ebe5d] text-white font-label-caps text-label-caps uppercase tracking-[0.14em] hover:bg-[#169d4c] transition-all shadow-md font-semibold ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20want%20to%20enquire%20about%20cosmetics%20and%20bridal%20jewellery" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp Concierge</span></a><a class="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 rounded bg-white text-[#380811] border border-[#ded0c3] font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#f6efe6] transition-all shadow-sm" href="#haldia-showroom"><span class="material-symbols-outlined text-[17px] text-[#9c7627]">storefront</span><span>Boutique Details</span></a></div><div class="grid grid-cols-3 gap-space-sm pt-space-lg mt-space-md border-t border-[#dfd2c4] w-full max-w-2xl"><div class="border-r border-[#e8ded3] pr-2"><p class="font-serif text-[17px] text-[#380811] font-bold">100% Genuine</p><p class="font-body-sm text-[12px] text-[#6b585a] mt-0.5">Authorized Sealed Stock</p></div><div class="border-r border-[#e8ded3] pr-2"><p class="font-serif text-[17px] text-[#380811] font-bold">Bridal Matching</p><p class="font-body-sm text-[12px] text-[#6b585a] mt-0.5">Polki, Kundan &amp; Stones</p></div><div><p class="font-serif text-[17px] text-[#380811] font-bold">Haldia Express</p><p class="font-body-sm text-[12px] text-[#6b585a] mt-0.5">Same-Day Concierge</p></div></div></div>
+<!-- Hero Right Column: Framed Editorial Photographs -->
+<div class="lg:col-span-5 relative mt-space-lg lg:mt-0">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Decorative Gold Backdrop Halo -->
+<div class="absolute -inset-1.5 rounded-2xl bg-gradient-to-tr from-[#c59a3f]/40 via-transparent to-[#380811]/20 blur-sm pointer-events-none"></div>
+<!-- Real Store Shelf Photograph Framing https://lh3.googleusercontent.com/aida-public/AB6AXuBdf_ztvsLOoaeeMOtfZSDa8BjpkGfr04zwjUGxX0bbXkLaEv3CBe-m1rtlIhj5U_vOr1FraD1ZigDrDru1MjG7ivjCFItMyGgJaaTovPdYUNslujlHRjdrUlliOBG7XsA_9AHr5NU129b6zDI9xheK2z6C1KnJy0nnd8TAtmf58VRlG7Q1vCOOz1p_LmjX407vlxOYSWxNtedRW8HVgyZ06n-j_JBI9endVCl4256b4qu0wONeIz3K -->
+<div class="relative rounded-xl overflow-hidden shadow-2xl bg-white border-2 border-[#e5d4c0] aspect-[4/5] group">
+<img alt="Authentic stocked shelves at Shokher Saaj Haldia with branded skincare and cosmetics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdf_ztvsLOoaeeMOtfZSDa8BjpkGfr04zwjUGxX0bbXkLaEv3CBe-m1rtlIhj5U_vOr1FraD1ZigDrDru1MjG7ivjCFItMyGgJaaTovPdYUNslujlHRjdrUlliOBG7XsA_9AHr5NU129b6zDI9xheK2z6C1KnJy0nnd8TAtmf58VRlG7Q1vCOOz1p_LmjX407vlxOYSWxNtedRW8HVgyZ06n-j_JBI9endVCl4256b4qu0wONeIz3K">
+<div class="absolute inset-0 bg-gradient-to-t from-[#220409]/90 via-[#220409]/20 to-transparent"></div>
+<!-- Floating Gold Seal -->
+<div class="absolute top-4 right-4 bg-[#380811]/90 backdrop-blur-md border border-[#c59a3f]/70 text-[#fbf0d8] px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg">
+<span class="material-symbols-outlined text-[#e5be74] text-[15px]">verified</span>
+<span class="font-label-caps text-[9px] uppercase tracking-widest font-bold">100% Sourced &amp; Inspected</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-lg bg-white/95 backdrop-blur-md border border-[#c59a3f]/40 shadow-xl flex items-center justify-between">
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-[0.16em] text-[#9c7627] font-bold">Actual In-Store Inventory</span>
+<p class="font-serif text-[#380811] text-[17px] font-bold leading-tight mt-0.5">Lakmé • Maybelline • Minimalist</p>
+<p class="font-body-sm text-[12px] text-[#6b585a]">Fresh batches stocked at HIT College Road</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-[#fbf5eb] border border-[#d8bead] flex items-center justify-center text-[#9c7627] shadow-inner">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+</div>
+</div>
+<!-- Real Storefront Inset Badge https://lh3.googleusercontent.com/aida-public/AB6AXuA9W6GStam_gsuCF22daEi2ULKm8uA4fgBOg-1adDK5OsfrBAvl97QIblT1fNJ_7IVa8dKzQjWoHJR0SdZNfcun3DT_vj_6qYN1g3xYq8POP3z8bOFCZDDC5se5CR2YZXoRBT40aeWECRLpHIAYaRFFk58NnQw1Kza2vob1K2aVz03aMKjyEL5ovuyZxbWmO0LxhErCZMerLyiiicwlOw9cGAdpvUrO-QFU18gXPRY8oxZNMJ9_-irm -->
+<div class="hidden sm:flex absolute -bottom-8 -left-8 w-60 rounded-xl overflow-hidden bg-white p-2.5 shadow-2xl border-2 border-[#c59a3f]/60 flex-col gap-2">
+<div class="relative h-28 w-full rounded-lg overflow-hidden border border-[#e5d4c0]">
+<img alt="Actual entrance storefront of Shokher Saaj on HIT College Road, Kshudiram Nagar, Haldia" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9W6GStam_gsuCF22daEi2ULKm8uA4fgBOg-1adDK5OsfrBAvl97QIblT1fNJ_7IVa8dKzQjWoHJR0SdZNfcun3DT_vj_6qYN1g3xYq8POP3z8bOFCZDDC5se5CR2YZXoRBT40aeWECRLpHIAYaRFFk58NnQw1Kza2vob1K2aVz03aMKjyEL5ovuyZxbWmO0LxhErCZMerLyiiicwlOw9cGAdpvUrO-QFU18gXPRY8oxZNMJ9_-irm">
+<span class="absolute top-1.5 left-1.5 bg-[#380811] text-[#fed488] text-[9px] font-label-caps px-2 py-0.5 rounded font-bold uppercase tracking-wider border border-[#c59a3f]/40">HIT Flagship</span>
+</div>
+<div class="px-1 pb-1">
+<p class="font-serif text-[14px] text-[#380811] font-bold">Walk-in Swatch Lounge</p>
+<p class="font-body-sm text-[11px] text-[#6b585a] leading-tight">Daily 10:30 AM – 9:00 PM • Kshudiram Nagar</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Categories Section (Structured Haute Portals) -->
+<section class="w-full bg-[#f6f2ea] py-space-xl border-b border-[#e5dbcf]" id="store-categories">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<div class="inline-flex items-center gap-2 text-[#9c7627] mb-1">
+<span class="font-serif text-sm">✧</span>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] font-bold">Bespoke Departmental Range</span>
+<span class="font-serif text-sm">✧</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#250409] font-serif mt-1">Shop by Real In-Store Categories</h2>
+<p class="font-body-md text-[#5f4e50] max-w-xl mt-1">Every category is physically stocked, verified, and sealed inside our Kshudiram Nagar store.</p>
+</div>
+<a class="inline-flex items-center gap-1 font-label-caps text-label-caps uppercase text-[#380811] hover:text-[#9c7627] font-bold tracking-widest underline decoration-[#9c7627] underline-offset-4 transition-colors" href="#featured-products">
+          View All Best Sellers <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Categories Grid (5 Architectural Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Category 1: Cosmetics & Makeup -->
+<div class="group relative rounded-xl bg-white p-3.5 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col border border-[#ded2c4] hover:border-[#c59a3f]">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-[#faf6f0] mb-3">
+<img alt="Cosmetics makeup collection including Lakmé lipsticks and Swiss Beauty foundation" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArUrFXV0NICkzfsUfzmEAppJa-hpRsWtkgx6u8qk86RhRVj7W8sb77ZKXar5ADGgHjJmkNQIXU_0aAs7QIZqC1su7z7PjW57FedMvRjASvICceMuXq5JNtA2kr8gkZSa4MzIVgyLD3Mw0RcPTyjSiQ0KVgeCDLpFmJJ-zEX92_2Fby2NDWUMk4rVOCix6YSSY3I81WGiNLPsLGWKE8Lg3a_mtD-CVZEz01HJpMHlA">
+<span class="absolute top-2 left-2 bg-[#380811] text-[#fed488] font-label-caps text-[9px] uppercase tracking-wider px-2 py-0.5 rounded font-bold border border-[#c59a3f]/40">100% Genuine</span>
+</div>
+<span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Face • Lips • Eyes</span>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5">Cosmetics &amp; Makeup</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1 mb-3 line-clamp-2">Lakmé, Maybelline, L'Oréal, Sugar, Swiss Beauty liquid shades &amp; foundations.</p>
+<a class="mt-auto inline-flex items-center justify-between w-full pt-2.5 border-t border-[#eee5dc] font-label-caps text-[11px] uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]" href="https://wa.me/917001579693?text=I%20am%20looking%20for%20Makeup%20and%20Cosmetics%20shades%20at%20Shokher%20Saaj%20Haldia" target="_blank">
+<span>Explore Lineup</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Category 2: Skincare -->
+<div class="group relative rounded-xl bg-white p-3.5 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col border border-[#ded2c4] hover:border-[#c59a3f]">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-[#faf6f0] mb-3">
+<img alt="Dermatological skincare bottles serums and sunscreen lotions" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRIzK-6BqmgJ0KWT_FsfufhpNj8gYzirivN_8FN4yNqTchZO99ydO_keiMog7UW_xTr7YxSv9GhdTPGRo1laJVzv4HzcHnOA3s-KFCnUIh9pN1opD3dczZ6GjViJ3Q0ZSkQ1BSBKezHwMR26eR6xDnIUzTnNV7YUyQQa4Vd6A3K2icEkXWZilRpPbuix7APtkU_GV5T3UGiFL-LSRgw9Nnai8kEbxLYQxxw86KNz8">
+<span class="absolute top-2 left-2 bg-[#9c7627] text-white font-label-caps text-[9px] uppercase tracking-wider px-2 py-0.5 rounded font-bold">Derm Tested</span>
+</div>
+<span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Hydration • Actives</span>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5">Targeted Skincare</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1 mb-3 line-clamp-2">Minimalist, Derma Co, Cetaphil, Plum, Dot &amp; Key serums &amp; hydrating sunscreens.</p>
+<a class="mt-auto inline-flex items-center justify-between w-full pt-2.5 border-t border-[#eee5dc] font-label-caps text-[11px] uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]" href="https://wa.me/917001579693?text=I%20am%20looking%20for%20Skincare%20products%20at%20Shokher%20Saaj%20Haldia" target="_blank">
+<span>Explore Lineup</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Category 3: Bridal & Artificial Jewellery -->
+<div class="group relative rounded-xl bg-white p-3.5 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col border border-[#ded2c4] hover:border-[#c59a3f]">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-[#faf6f0] mb-3">
+<img alt="Royal Bengali Polki and Kundan bridal artificial choker necklace and earrings" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgyojnMXlystEIt0UbYH5dJzUg6g6jN3Lxl-IeiIIs6U2DIRQUepEaFn8mowem3Ksbu-LVtbMhSZapPh04pHB5xEl_XPMA6Qky8xnu3EgGPLBvMjNBWEIDv8S5VmXKuGjOlmJsUhjOT1UfTFcocprgGefsDuO5v8ss7nMdtrCJ0q6BjAAETWmcWXNOM5MwuQ_eJp8Yokt6s9ZEAcHQpfKLXut97qio82s-h_8WYSQ">
+<span class="absolute top-2 left-2 bg-[#701c27] text-white font-label-caps text-[9px] uppercase tracking-wider px-2 py-0.5 rounded font-bold">Bridal Special</span>
+</div>
+<span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Polki • Kundan • Sets</span>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5">Bridal Jewellery</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1 mb-3 line-clamp-2">Handcrafted chokers, Jhumkas, bridal matha patti, bangles, and festive sets.</p>
+<a class="mt-auto inline-flex items-center justify-between w-full pt-2.5 border-t border-[#eee5dc] font-label-caps text-[11px] uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]" href="https://wa.me/917001579693?text=I%20want%20to%20see%20Bridal%20Jewellery%20and%20Choker%20designs%20at%20Shokher%20Saaj" target="_blank">
+<span>Explore Lineup</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Category 4: Fragrance & Mist -->
+<div class="group relative rounded-xl bg-white p-3.5 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col border border-[#ded2c4] hover:border-[#c59a3f]">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-[#faf6f0] mb-3">
+<img alt="Bottles of luxury eau de parfum and fine body mists" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm-UyrgNciTBvAwEnqdbd0i9wjB5Dbalvj0fDVzbF8tKTJzkwGQRVbfkkxXK1OBhvsF1P3dLUgzS8UIi5XixMg5DE_fT1esyftTH3cocY6SgvVyxkkX4yVa9kvfT5usF3Ub2N1taIwip5uYDON9xWtNP8znVntHhxIr6YBiNR7_MLUPSV2KEsYrXPK4jnUeuvJcGEdr7nm-Ed-E5FvJYV4TovHh-_Y_XNZuK-Pweg">
+<span class="absolute top-2 left-2 bg-[#9c7627] text-white font-label-caps text-[9px] uppercase tracking-wider px-2 py-0.5 rounded font-bold">Long Lasting</span>
+</div>
+<span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">EDP • Attar • Mists</span>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5">Fragrance &amp; Mists</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1 mb-3 line-clamp-2">Long-wearing luxury body mists, roll-on attars, pocket perfumes, and French deodorants.</p>
+<a class="mt-auto inline-flex items-center justify-between w-full pt-2.5 border-t border-[#eee5dc] font-label-caps text-[11px] uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]" href="https://wa.me/917001579693?text=I%20want%20to%20enquire%20about%20perfumes%20and%20body%20mists%20at%20Shokher%20Saaj%20Haldia" target="_blank">
+<span>Explore Lineup</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Category 5: Beauty Tools & Accessories -->
+<div class="group relative rounded-xl bg-white p-3.5 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col border border-[#ded2c4] hover:border-[#c59a3f]">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-[#faf6f0] mb-3">
+<img alt="Set of professional synthetic makeup brushes and soft beauty sponges" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEtQXoJQBnAgbo8MIKYRPO3jn_qvYI7GjBYyIGmltosZvOK_dULYfRCm4jUIJivnCemCHvpiEt_KuE5lsMaxTSVxlUwZeMTw92KagQNZl6EDv8-vx9U1GV7hHgcW0sKSil_cAHRbkrcEZjKHqRxVA4wVSzEUWBVWuftKkmJrGxyWWYFrzzUJm_oJQ1bWp7tzSk_74_alcLwFzQrfkGarUxPIKBfgB_kQgNC5IXSLQ">
+<span class="absolute top-2 left-2 bg-[#380811] text-[#fed488] font-label-caps text-[9px] uppercase tracking-wider px-2 py-0.5 rounded font-bold border border-[#c59a3f]/40">Pro Grade</span>
+</div>
+<span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Brushes • Mirrors</span>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5">Accessories &amp; Tools</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1 mb-3 line-clamp-2">High-density blending sponges, precision bristle brush kits, clips, and vanity mirrors.</p>
+<a class="mt-auto inline-flex items-center justify-between w-full pt-2.5 border-t border-[#eee5dc] font-label-caps text-[11px] uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]" href="https://wa.me/917001579693?text=I%20am%20looking%20for%20Beauty%20Accessories%20at%20Shokher%20Saaj%20Haldia" target="_blank">
+<span>Explore Lineup</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Real Store Inventory Spotlight Banner https://lh3.googleusercontent.com/aida-public/AB6AXuBdf_ztvsLOoaeeMOtfZSDa8BjpkGfr04zwjUGxX0bbXkLaEv3CBe-m1rtlIhj5U_vOr1FraD1ZigDrDru1MjG7ivjCFItMyGgJaaTovPdYUNslujlHRjdrUlliOBG7XsA_9AHr5NU129b6zDI9xheK2z6C1KnJy0nnd8TAtmf58VRlG7Q1vCOOz1p_LmjX407vlxOYSWxNtedRW8HVgyZ06n-j_JBI9endVCl4256b4qu0wONeIz3K -->
+<div class="mt-space-xl rounded-2xl bg-gradient-to-b from-[#fcfaf7] via-[#fbf6ed] to-[#f7f2ea] p-6 sm:p-8 md:p-12 border border-[#ded0c3] ring-1 ring-[#c59a3f]/30 shadow-2xl relative overflow-hidden">
+  <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-[#fed488]/15 blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-[#380811]/5 blur-3xl pointer-events-none"></div>
+  
+  <!-- Section Editorial Header -->
+  <div class="relative z-10 text-center max-w-3xl mx-auto mb-8">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 border border-[#c59a3f]/50 shadow-sm mb-3.5">
+      <span class="font-serif text-[#9c7627] text-xs">✧</span>
+      <span class="font-label-caps text-[10px] tracking-[0.25em] uppercase text-[#8e6b22] font-bold">HALDIA'S COMPREHENSIVE LIFESTYLE &amp; BEAUTY ATELIER</span>
+      <span class="font-serif text-[#9c7627] text-xs">✧</span>
+    </div>
+    <h3 class="font-headline-lg text-headline-lg-mobile md:text-[38px] text-[#240409] font-serif leading-tight font-medium">
+      All Your Favourite Things Under One Roof
+    </h3>
+    <p class="bengali-font text-[18px] md:text-[20px] text-[#701c27] font-semibold mt-1.5 tracking-wide" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">
+      “আপনার সাজ, আপনার স্টাইল — শখের সাজ স্পেশাল কালেকশন”
+    </p>
+    <p class="font-body-md text-[#554345] max-w-2xl mx-auto mt-3 font-normal leading-relaxed text-[14px]">
+      Step inside our Kshudiram Nagar showroom to explore Purba Medinipur's finest curation. From certified authentic cosmetics and regal bridal jewellery to handcrafted glass bangles, curated gift hampers, luxury accessories, and college stationery.
+    </p>
+
+    <!-- Quick Highlight Filter Pills Strip -->
+    <div id="dept-filter-tabs" class="flex flex-wrap items-center justify-center gap-2 mt-5 pt-1"><button type="button" data-dept-filter="all" class="dept-tab active px-3.5 py-1 rounded-full bg-[#380811] text-[#fed488] font-label-caps text-[10px] uppercase font-bold tracking-wider border border-[#c59a3f]/50 shadow-sm transition-all cursor-pointer">All In-Store</button><button type="button" data-dept-filter="beauty" class="dept-tab px-3.5 py-1 rounded-full bg-white/90 text-[#635153] font-label-caps text-[10px] uppercase font-semibold tracking-wider border border-[#ded2c4] shadow-sm hover:border-[#9c7627] hover:text-[#380811] transition-all cursor-pointer">Beauty &amp; Derma</button><button type="button" data-dept-filter="bridal" class="dept-tab px-3.5 py-1 rounded-full bg-white/90 text-[#635153] font-label-caps text-[10px] uppercase font-semibold tracking-wider border border-[#ded2c4] shadow-sm hover:border-[#9c7627] hover:text-[#380811] transition-all cursor-pointer">Bridal &amp; Jewellery</button><button type="button" data-dept-filter="fashion" class="dept-tab px-3.5 py-1 rounded-full bg-white/90 text-[#635153] font-label-caps text-[10px] uppercase font-semibold tracking-wider border border-[#ded2c4] shadow-sm hover:border-[#9c7627] hover:text-[#380811] transition-all cursor-pointer">Fashion &amp; Bags</button><button type="button" data-dept-filter="stationery" class="dept-tab px-3.5 py-1 rounded-full bg-white/90 text-[#635153] font-label-caps text-[10px] uppercase font-semibold tracking-wider border border-[#ded2c4] shadow-sm hover:border-[#9c7627] hover:text-[#380811] transition-all cursor-pointer">Stationery &amp; Gifts</button></div>
+  </div>
+
+  <!-- 8 Luxury Boutique Department Cards Grid -->
+  <div id="dept-cards-grid" class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5"><!-- Card 1: Authentic Cosmetics & Skincare -->
+<div data-dept-card="beauty" class="group bg-white/95 backdrop-blur-sm rounded-xl border border-[#ded2c4] hover:border-[#9c7627] hover:bg-white shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:scale-[1.02]">
+  <div>
+    <div class="overflow-hidden rounded-t-xl relative h-48 sm:h-52 w-full bg-[#f6f2ea]">
+      <img src="https://lh3.googleusercontent.com/aida/ALJJyrCrAels7ycbIJRIpc4gJ_0qNTg_QYBdh4ivUnuPcb_FnmebTnn3_xnwS-J4JgL-h4MxCWF9RpjyhMG3pQ6QehE2zylgmTOtLwhUZ9bMbbBTYb-aix36Xk08ej6FVzAEdZznOay38Wka3QWjapVo5DGzmUTQS5wUmPJJX3MAkQ3I7fP-WapqckKPhFv6amEOqHB1hMqurLBWg4VohuN-sxE5J0npU5TnLLpuKePOPDDk" alt="Luxury skincare and cosmetics collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <div class="absolute top-3 left-3 flex items-center gap-1.5">
+        <span class="font-label-caps text-[9px] uppercase tracking-wider text-[#fed488] font-bold bg-[#380811]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#c59a3f]/50 shadow-sm">DEP 01</span>
+      </div>
+      <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white">
+        <span class="font-label-caps text-[10px] uppercase tracking-widest text-[#f5ebd7] font-semibold drop-shadow">100% Genuine Brands</span>
+        <span class="material-symbols-outlined text-[#fed488] text-[18px]">verified</span>
+      </div>
+    </div>
+    <div class="p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Face • Lips • Skincare</span>
+        <span class="material-symbols-outlined text-[#9c7627] text-[18px] group-hover:rotate-45 transition-transform duration-300">brush</span>
+      </div>
+      <h4 class="font-title-editorial text-[18px] text-[#240409] font-bold leading-snug group-hover:text-[#701c27] transition-colors">Authentic Cosmetics &amp; Skincare</h4>
+      <span class="bengali-font text-[13px] text-[#701c27] font-semibold block mt-0.5" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">মেকআপ ও স্কিন কেয়ার</span>
+      <p class="font-body-sm text-[12px] text-[#6b585a] mt-2 leading-relaxed">Lakmé, Maybelline, L'Oréal, Sugar, Minimalist, Cetaphil, Derma Co, facewashes &amp; luxury mists.</p>
+    </div>
+  </div>
+  <div class="px-5 pb-5 pt-0">
+    <div class="pt-3.5 border-t border-[#eee5dc] flex items-center justify-between text-xs font-label-caps uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]">
+      <a class="inline-flex items-center gap-1.5 hover:underline" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20want%20to%20enquire%20about%20Cosmetics%20and%20Skincare" target="_blank">
+        <span>Check Availability</span>
+        <span class="material-symbols-outlined text-[15px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 2: Artisanal Bridal & Fashion Jewelry -->
+<div data-dept-card="bridal" class="group bg-white/95 backdrop-blur-sm rounded-xl border-2 border-[#c59a3f]/60 hover:border-[#9c7627] hover:bg-white shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:scale-[1.02]">
+  <div>
+    <div class="overflow-hidden rounded-t-xl relative h-48 sm:h-52 w-full bg-[#f6f2ea]">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJqQUy3HveBFHZ5BfAM7UkC7lVWAPoNa1LGybBME_Vs1wdl0lKv4CcMjPyMiUo7sKTM4g3cLsbcdw_a5stoXQ50g4YazCcqWA4Oztt1wIwdPPU7UN_DywYNXfohGKKpV1i-4odcQAunDA4zUsr3euZQ743uHXmdtN34630bsOjzNlNAG-zjoF91by16rePpCJGXqRdiny18DR13QQXvWznFCdtbX3g8UuQQjFAdR8" alt="Artisanal bridal Polki and Kundan jewellery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <div class="absolute top-3 left-3 flex items-center gap-1.5">
+        <span class="font-label-caps text-[9px] uppercase tracking-wider text-[#fed488] font-bold bg-[#380811]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#c59a3f]/50 shadow-sm">DEP 02</span>
+      </div>
+      <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white">
+        <span class="font-label-caps text-[10px] uppercase tracking-widest text-[#f5ebd7] font-semibold drop-shadow">Bengali Bridal Special</span>
+        <span class="material-symbols-outlined text-[#fed488] text-[18px]">diamond</span>
+      </div>
+    </div>
+    <div class="p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Polki • Kundan • Sets</span>
+        <span class="material-symbols-outlined text-[#9c7627] text-[18px] group-hover:rotate-45 transition-transform duration-300">stars</span>
+      </div>
+      <h4 class="font-title-editorial text-[18px] text-[#240409] font-bold leading-snug group-hover:text-[#701c27] transition-colors">Artisanal Bridal &amp; Fashion Jewelry</h4>
+      <span class="bengali-font text-[13px] text-[#701c27] font-semibold block mt-0.5" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">ব্রাইডাল ও ফ্যাশন জুয়েলারি</span>
+      <p class="font-body-sm text-[12px] text-[#6b585a] mt-2 leading-relaxed">Handcrafted Polki &amp; Kundan chokers, Jhumkas, bridal matha patti, stone rings &amp; bespoke wedding suites.</p>
+    </div>
+  </div>
+  <div class="px-5 pb-5 pt-0">
+    <div class="pt-3.5 border-t border-[#eee5dc] flex items-center justify-between text-xs font-label-caps uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]">
+      <a class="inline-flex items-center gap-1.5 hover:underline" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20want%20to%20see%20Artisanal%20Bridal%20Jewellery" target="_blank">
+        <span>Match With Saree</span>
+        <span class="material-symbols-outlined text-[15px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3: Designer Bangles & Shakha Pola -->
+<div data-dept-card="bridal" class="group bg-white/95 backdrop-blur-sm rounded-xl border border-[#ded2c4] hover:border-[#9c7627] hover:bg-white shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:scale-[1.02]">
+  <div>
+    <div class="overflow-hidden rounded-t-xl relative h-48 sm:h-52 w-full bg-[#f6f2ea]">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZeQIds23FHrpohwa6rQCfpxPLfPOSlYn9V2W54noO4X4hkIgRe9YDaEkALj2zV_RqQxe_Lp8mhbrT7PMRPzYHlhMwBy3QEaTeshiWld6Eg38cEyhKuOeQvo-fKbl9nh3oyiaSgwsqdG1n2qXx_Nny0I4sWtsR43w9EeNhDr4lSyfcelFziKDr9oSCTsL2CHACPLQT2KcU_mNBvoSxMfidj70R1_7RZTcpnvpPnDc" alt="Traditional Bengali Shakha Pola and gold filigree bangles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <div class="absolute top-3 left-3 flex items-center gap-1.5">
+        <span class="font-label-caps text-[9px] uppercase tracking-wider text-[#fed488] font-bold bg-[#380811]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#c59a3f]/50 shadow-sm">DEP 03</span>
+      </div>
+      <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white">
+        <span class="font-label-caps text-[10px] uppercase tracking-widest text-[#f5ebd7] font-semibold drop-shadow">Pure Filigree &amp; Glass</span>
+        <span class="material-symbols-outlined text-[#fed488] text-[18px]">all_inclusive</span>
+      </div>
+    </div>
+    <div class="p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Bangles • Chuda • Balas</span>
+        <span class="material-symbols-outlined text-[#9c7627] text-[18px] group-hover:rotate-45 transition-transform duration-300">cyclone</span>
+      </div>
+      <h4 class="font-title-editorial text-[18px] text-[#240409] font-bold leading-snug group-hover:text-[#701c27] transition-colors">Designer Bangles &amp; Shakha Pola</h4>
+      <span class="bengali-font text-[13px] text-[#701c27] font-semibold block mt-0.5" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">ডিজাইনার চুড়ি ও শাঁখা পলা</span>
+      <p class="font-body-sm text-[12px] text-[#6b585a] mt-2 leading-relaxed">Traditional Bengali glass bangles, 22k gold embossed Shakha Pola, velvet party sets &amp; bridal chudas.</p>
+    </div>
+  </div>
+  <div class="px-5 pb-5 pt-0">
+    <div class="pt-3.5 border-t border-[#eee5dc] flex items-center justify-between text-xs font-label-caps uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]">
+      <a class="inline-flex items-center gap-1.5 hover:underline" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20want%20to%20enquire%20about%20Designer%20Bangles%20and%20Shakha%20Pola" target="_blank">
+        <span>Check Sizes &amp; Sets</span>
+        <span class="material-symbols-outlined text-[15px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 4: Luxury Handbags & Clutches -->
+<div data-dept-card="fashion" class="group bg-white/95 backdrop-blur-sm rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] hover:bg-white shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:scale-[1.02]">
+  <div>
+    <div class="overflow-hidden rounded-t-xl relative h-48 sm:h-52 w-full bg-[#f6f2ea]">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgt_WQsDKRj-R9xHMDcgM7mD3NPNukpBBjOlVwFZuJ8FMHH2D7lttrTJVabbQuYjpf4Pf9F24WB6zmJI6V_WnEctIW0GVgdzVf_-dBQ7jjVq6YXLXkB8axiPuBdeFE4O9bERgU--MGLGaGtp5MktIdckPtPmqXDewNYNnFUvWRZllHTnjGnPjPQ4YFt9SRGn9GQpbl__98dkPIY-bwBPQcqCIEqL21PhkW4RHaDME" alt="Bridal zardozi potli clutch and luxury leather sling bag" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <div class="absolute top-3 left-3 flex items-center gap-1.5">
+        <span class="font-label-caps text-[9px] uppercase tracking-wider text-[#fed488] font-bold bg-[#380811]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#c59a3f]/50 shadow-sm">DEP 04</span>
+      </div>
+      <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white">
+        <span class="font-label-caps text-[10px] uppercase tracking-widest text-[#f5ebd7] font-semibold drop-shadow">Bridal &amp; Daily Slings</span>
+        <span class="material-symbols-outlined text-[#fed488] text-[18px]">shopping_bag</span>
+      </div>
+    </div>
+    <div class="p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Clutches • Slings • Totes</span>
+        <span class="material-symbols-outlined text-[#9c7627] text-[18px] group-hover:rotate-45 transition-transform duration-300">work</span>
+      </div>
+      <h4 class="font-title-editorial text-[18px] text-[#240409] font-bold leading-snug group-hover:text-[#701c27] transition-colors">Luxury Handbags &amp; Clutches</h4>
+      <span class="bengali-font text-[13px] text-[#701c27] font-semibold block mt-0.5" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">ব্যাগ ও ক্লাচ</span>
+      <p class="font-body-sm text-[12px] text-[#6b585a] mt-2 leading-relaxed">Zardozi embroidered bridal potlis, minimalist structured sling bags, office totes &amp; wallets.</p>
+    </div>
+  </div>
+  <div class="px-5 pb-5 pt-0">
+    <div class="pt-3.5 border-t border-[#eee5dc] flex items-center justify-between text-xs font-label-caps uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]">
+      <a class="inline-flex items-center gap-1.5 hover:underline" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20want%20to%20see%20Handbags%20and%20Clutches" target="_blank">
+        <span>Browse Bags</span>
+        <span class="material-symbols-outlined text-[15px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 5: Bespoke Gift Hampers & Keepsakes -->
+<div data-dept-card="stationery" class="group bg-white/95 backdrop-blur-sm rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] hover:bg-white shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:scale-[1.02]">
+  <div>
+    <div class="overflow-hidden rounded-t-xl relative h-48 sm:h-52 w-full bg-[#f6f2ea]">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHETRp1FKUyPvMDspdLNm-p_b8eyRLUfeayh57VPj7vlh5isOzOYWPvviGfWsMDDxzsnR4TtVhA6tzfejhSi2sFJfOJGXm-33x2zo6PliJMCJq8o9nGqb3mfAHPHJwOSy8QEJM2ikanVj7alSkPQOINwPoZ4R9EobFLIwAiJm0YHouAAr41-SlQwybdVkKRhk0Zjj8eNP5yRG3E_ZXruWk-VFa3WUvlODz5i3qYUc" alt="Curated bridal trousseau gift hamper presentation box" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <div class="absolute top-3 left-3 flex items-center gap-1.5">
+        <span class="font-label-caps text-[9px] uppercase tracking-wider text-[#fed488] font-bold bg-[#380811]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#c59a3f]/50 shadow-sm">DEP 05</span>
+      </div>
+      <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white">
+        <span class="font-label-caps text-[10px] uppercase tracking-widest text-[#f5ebd7] font-semibold drop-shadow">Curated Trousseau Hampers</span>
+        <span class="material-symbols-outlined text-[#fed488] text-[18px]">featured_seasonal_and_gifts</span>
+      </div>
+    </div>
+    <div class="p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Celebration • Keepsakes</span>
+        <span class="material-symbols-outlined text-[#9c7627] text-[18px] group-hover:rotate-45 transition-transform duration-300">card_giftcard</span>
+      </div>
+      <h4 class="font-title-editorial text-[18px] text-[#240409] font-bold leading-snug group-hover:text-[#701c27] transition-colors">Bespoke Gift Hampers &amp; Keepsakes</h4>
+      <span class="bengali-font text-[13px] text-[#701c27] font-semibold block mt-0.5" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">উপহার সামগ্রী ও হ্যাম্পার</span>
+      <p class="font-body-sm text-[12px] text-[#6b585a] mt-2 leading-relaxed">Tailored bride &amp; groom trousseau boxes, birthday gift baskets, scented candles, photo frames &amp; mugs.</p>
+    </div>
+  </div>
+  <div class="px-5 pb-5 pt-0">
+    <div class="pt-3.5 border-t border-[#eee5dc] flex items-center justify-between text-xs font-label-caps uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]">
+      <a class="inline-flex items-center gap-1.5 hover:underline" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20want%20to%20customize%20a%20Gift%20Hamper" target="_blank">
+        <span>Customize Hamper</span>
+        <span class="material-symbols-outlined text-[15px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6: Eye Glasses & Styling Accessories -->
+<div data-dept-card="fashion" class="group bg-white/95 backdrop-blur-sm rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] hover:bg-white shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:scale-[1.02]">
+  <div>
+    <div class="overflow-hidden rounded-t-xl relative h-48 sm:h-52 w-full bg-[#f6f2ea]">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuqrQIn5enUx35G5pl7-3Y7UvMLJ0yJSWvSeQaUqPfu5fCKyRiYec8kzbFTwSyfLYPsqWNj1p7mPhJ1b6Y2tQ76CsFS8KSiv5TvmUTNI5Ys2PcEKRszE6P6bV8C7e_iVg1XDraG1FzlDwHwfygiiCqJAKruKLBO2i3VhR5Vm7j48q1BXUI8lHoa1r0mPE1bMEIOhhtyTuvoGjbCTtMHk9cfRvFB9nWpY-zVMnYJUc" alt="Designer sunglasses, satin scrunchies and bridal hairpins" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <div class="absolute top-3 left-3 flex items-center gap-1.5">
+        <span class="font-label-caps text-[9px] uppercase tracking-wider text-[#fed488] font-bold bg-[#380811]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#c59a3f]/50 shadow-sm">DEP 06</span>
+      </div>
+      <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white">
+        <span class="font-label-caps text-[10px] uppercase tracking-widest text-[#f5ebd7] font-semibold drop-shadow">Styling Studio Accessories</span>
+        <span class="material-symbols-outlined text-[#fed488] text-[18px]">eyeglasses</span>
+      </div>
+    </div>
+    <div class="p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Shades • Hair Accessories</span>
+        <span class="material-symbols-outlined text-[#9c7627] text-[18px] group-hover:rotate-45 transition-transform duration-300">auto_awesome</span>
+      </div>
+      <h4 class="font-title-editorial text-[18px] text-[#240409] font-bold leading-snug group-hover:text-[#701c27] transition-colors">Eye Glasses &amp; Styling Accessories</h4>
+      <span class="bengali-font text-[13px] text-[#701c27] font-semibold block mt-0.5" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">সানগ্লাস ও হেয়ার অ্যাক্সেসরিজ</span>
+      <p class="font-body-sm text-[12px] text-[#6b585a] mt-2 leading-relaxed">UV-protected sunglasses, aesthetic frames, silk scrunchies, pearl hairpins, clips &amp; bridal brooches.</p>
+    </div>
+  </div>
+  <div class="px-5 pb-5 pt-0">
+    <div class="pt-3.5 border-t border-[#eee5dc] flex items-center justify-between text-xs font-label-caps uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]">
+      <a class="inline-flex items-center gap-1.5 hover:underline" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20am%20looking%20for%20Sunglasses%20and%20Accessories" target="_blank">
+        <span>View Styles</span>
+        <span class="material-symbols-outlined text-[15px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 7: Student & Creative Stationery -->
+<div data-dept-card="stationery" class="group bg-white/95 backdrop-blur-sm rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] hover:bg-white shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:scale-[1.02]">
+  <div>
+    <div class="overflow-hidden rounded-t-xl relative h-48 sm:h-52 w-full bg-[#f6f2ea]">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPXNkNDsp0euL9t72Vlj_RhTXSvhr694FlliQBsKv6Y2k4pxUoU1AzWa_-_d4rzqdIl_mkh_XO1HHOfc7A0CA1VdW9-tqltq0MPguA04uOCrVjbZs4FGILn0mC7JCHzYEag4-iJbrkdC9shp80MmG1hjogWpfbLDYD80zKtqYnaugak2aW6p9qAm227sNSMWRMztK-2vUHC19HbqJ7EkybktTFNxdd-mRq3h7idiA" alt="Artisanal fountain pens, stationery and journals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <div class="absolute top-3 left-3 flex items-center gap-1.5">
+        <span class="font-label-caps text-[9px] uppercase tracking-wider text-[#fed488] font-bold bg-[#380811]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#c59a3f]/50 shadow-sm">DEP 07</span>
+      </div>
+      <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white">
+        <span class="font-label-caps text-[10px] uppercase tracking-widest text-[#f5ebd7] font-semibold drop-shadow">HIT College Desk</span>
+        <span class="material-symbols-outlined text-[#fed488] text-[18px]">edit_note</span>
+      </div>
+    </div>
+    <div class="p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Pens • Journals • Art Supplies</span>
+        <span class="material-symbols-outlined text-[#9c7627] text-[18px] group-hover:rotate-45 transition-transform duration-300">draw</span>
+      </div>
+      <h4 class="font-title-editorial text-[18px] text-[#240409] font-bold leading-snug group-hover:text-[#701c27] transition-colors">Student &amp; Creative Stationery</h4>
+      <span class="bengali-font text-[13px] text-[#701c27] font-semibold block mt-0.5" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">স্টেশনারি ও আর্ট কর্নার</span>
+      <p class="font-body-sm text-[12px] text-[#6b585a] mt-2 leading-relaxed">Fine roller pens, deckle-edge journals, geometry kits, acrylic paints &amp; HIT College semester supplies.</p>
+    </div>
+  </div>
+  <div class="px-5 pb-5 pt-0">
+    <div class="pt-3.5 border-t border-[#eee5dc] flex items-center justify-between text-xs font-label-caps uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]">
+      <a class="inline-flex items-center gap-1.5 hover:underline" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20need%20College%20Stationery%20and%20Art%20Supplies" target="_blank">
+        <span>HIT Supplies</span>
+        <span class="material-symbols-outlined text-[15px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 8: Personal Care & Stainless Drinkware -->
+<div data-dept-card="beauty" class="group bg-white/95 backdrop-blur-sm rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] hover:bg-white shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:scale-[1.02]">
+  <div>
+    <div class="overflow-hidden rounded-t-xl relative h-48 sm:h-52 w-full bg-[#f6f2ea]">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ9A0nFxNzT-ExVx0Bq0m5R_jGzsvT029dDjQfZGkf5vGBD1mV8L6OiOXHwtbwUtO_6gguvUVMNyvs-zZG3vF9luZjY4AaRMeJOgPTA3pFuIaO5qYse5eNsD9qzzTu-dcdsHKAHry7dCabcjC-JEv6RO7vDiDT52-ks-QxgUjC54fvOmC7IqLP2acn00TrgOy-5bW0ZcWhT7m_NB-xTVGFlH55Ha9phO-RfyaTOGk" alt="Insulated stainless steel thermal bottles and lifestyle accessories" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <div class="absolute top-3 left-3 flex items-center gap-1.5">
+        <span class="font-label-caps text-[9px] uppercase tracking-wider text-[#fed488] font-bold bg-[#380811]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#c59a3f]/50 shadow-sm">DEP 08</span>
+      </div>
+      <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white">
+        <span class="font-label-caps text-[10px] uppercase tracking-widest text-[#f5ebd7] font-semibold drop-shadow">Everyday Luxury Essentials</span>
+        <span class="material-symbols-outlined text-[#fed488] text-[18px]">local_drink</span>
+      </div>
+    </div>
+    <div class="p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="font-label-caps text-[10px] text-[#9c7627] uppercase font-bold tracking-wider">Drinkware • Lifestyle</span>
+        <span class="material-symbols-outlined text-[#9c7627] text-[18px] group-hover:rotate-45 transition-transform duration-300">water_bottle</span>
+      </div>
+      <h4 class="font-title-editorial text-[18px] text-[#240409] font-bold leading-snug group-hover:text-[#701c27] transition-colors">Personal Care &amp; Stainless Drinkware</h4>
+      <span class="bengali-font text-[13px] text-[#701c27] font-semibold block mt-0.5" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">ওয়াটার বোতল ও লাইফস্টাইল</span>
+      <p class="font-body-sm text-[12px] text-[#6b585a] mt-2 leading-relaxed">Double-wall insulated rose gold flasks, aesthetic pastel drinkware, pocket mist sprays &amp; umbrellas.</p>
+    </div>
+  </div>
+  <div class="px-5 pb-5 pt-0">
+    <div class="pt-3.5 border-t border-[#eee5dc] flex items-center justify-between text-xs font-label-caps uppercase tracking-wider text-[#380811] font-bold group-hover:text-[#9c7627]">
+      <a class="inline-flex items-center gap-1.5 hover:underline" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20want%20to%20check%20Water%20Bottles%20and%20Lifestyle%20items" target="_blank">
+        <span>Store Counter</span>
+        <span class="material-symbols-outlined text-[15px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div></div>
+
+  <!-- Bottom Hallmark / Trust Ribbon & Direct Contact Strip -->
+  <div class="relative z-10 mt-8 pt-6 border-t border-[#ded2c4] flex flex-col lg:flex-row items-center justify-between gap-5">
+    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-xs font-label-caps uppercase tracking-wider">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[#e5d4c0] text-[#380811] font-bold shadow-sm">
+        <span class="material-symbols-outlined text-[15px] text-[#1ebe5d]">check_circle</span>
+        <span>100% Genuine Brands</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[#e5d4c0] text-[#380811] font-bold shadow-sm">
+        <span class="material-symbols-outlined text-[15px] text-[#9c7627]">price_check</span>
+        <span>Haldia Best Price</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[#e5d4c0] text-[#380811] font-bold shadow-sm">
+        <span class="material-symbols-outlined text-[15px] text-[#9c7627]">inventory_2</span>
+        <span>1000+ Items Variety</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[#e5d4c0] text-[#380811] font-bold shadow-sm">
+        <span class="material-symbols-outlined text-[15px] text-[#701c27]">school</span>
+        <span>Trusted by HIT Students</span>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center gap-3 flex-shrink-0">
+      <a class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#1ebe5d] text-white rounded font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#169d4c] transition-all shadow-sm ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20am%20enquiring%20about%20your%20in-store%20collections" target="_blank">
+        <span class="material-symbols-outlined text-[16px]">chat</span> WhatsApp: 81017 29767 / 70015 79693
+      </a>
+      <a class="inline-flex items-center gap-1.5 px-4 py-2.5 bg-white border border-[#c59a3f]/60 hover:bg-[#f6efe6] text-[#380811] rounded font-label-caps text-[11px] uppercase tracking-wider font-bold transition-all shadow-sm" href="#map-location">
+        <span class="material-symbols-outlined text-[16px] text-[#9c7627]">pin_drop</span> Kshudiram Nagar, HIT Road
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- Featured In-Store Best Sellers Carousel Slider Section -->
+<section class="w-full bg-[#fdfbf8] py-space-xl relative overflow-hidden" id="featured-products">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<!-- Header & Controls -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-space-md">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f6ebd4] text-[#8e6b22] mb-2 font-label-caps text-[10px] uppercase font-bold tracking-wider border border-[#e8d5b8]">
+<span class="material-symbols-outlined text-[14px]">storefront</span> Haldia Showroom In-Stock Products
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#250409] font-serif">Featured In-Store Best Sellers</h2>
+<p class="font-body-md text-[#5f4e50] mt-1">Walk into our Kshudiram Nagar store or click to order instantly on WhatsApp with free shade advice.</p>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<span class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-[#380811] px-3.5 py-1.5 rounded-full bg-[#f6efe6] border border-[#d8bead]">
+<span class="w-2 h-2 rounded-full bg-green-600 animate-pulse"></span> Haldia Counter Open Today
+</span>
+<!-- Circular Slider Navigation Buttons -->
+<div class="flex items-center gap-2">
+<button aria-label="Previous Slide" class="w-10 h-10 rounded-full border border-[#c59a3f]/60 bg-white text-[#380811] hover:bg-[#380811] hover:text-[#fed488] transition-all shadow-sm flex items-center justify-center active:scale-95 group" id="slider-prev-btn" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-0.5">chevron_left</span>
+</button>
+<button aria-label="Next Slide" class="w-10 h-10 rounded-full border border-[#c59a3f]/60 bg-white text-[#380811] hover:bg-[#380811] hover:text-[#fed488] transition-all shadow-sm flex items-center justify-center active:scale-95 group" id="slider-next-btn" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-3 mb-4 text-xs">
+<button class="filter-pill active whitespace-nowrap px-4 py-1.5 rounded-full bg-[#380811] text-[#fed488] font-label-caps text-[10px] uppercase tracking-wider font-bold shadow-sm transition-all border border-[#c59a3f]/50" data-category="all" type="button">All In-Stock</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full bg-white border border-[#ded2c4] text-[#635153] hover:border-[#9c7627] hover:text-[#380811] font-label-caps text-[10px] uppercase tracking-wider font-medium transition-all" data-category="cosmetics" type="button">Cosmetics &amp; Lips</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full bg-white border border-[#ded2c4] text-[#635153] hover:border-[#9c7627] hover:text-[#380811] font-label-caps text-[10px] uppercase tracking-wider font-medium transition-all" data-category="skincare" type="button">Targeted Skincare</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full bg-white border border-[#ded2c4] text-[#635153] hover:border-[#9c7627] hover:text-[#380811] font-label-caps text-[10px] uppercase tracking-wider font-medium transition-all" data-category="jewellery" type="button">Bridal Jewellery</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full bg-white border border-[#ded2c4] text-[#635153] hover:border-[#9c7627] hover:text-[#380811] font-label-caps text-[10px] uppercase tracking-wider font-medium transition-all" data-category="accessories" type="button">Accessories &amp; Kajal</button>
+</div>
+<!-- Interactive Horizontal Sliding Carousel Container -->
+<div class="relative w-full">
+<div class="flex gap-gutter overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory py-2 px-1 cursor-grab active:cursor-grabbing select-none" id="product-carousel" style="scroll-snap-type: x mandatory; scrollbar-width: none;">
+<!-- Slide Item 1: Maybelline SuperStay -->
+<div class="product-slide-card snap-start shrink-0 w-[84%] sm:w-[46%] lg:w-[31.6%] group bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="cosmetics">
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-[#faf6f0] overflow-hidden mb-3 border border-[#eee4da]">
+<img alt="Maybelline New York SuperStay Matte Ink liquid lipstick bottle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbKkRSMMLpFKniew5r6Ejs1CXzjJQscDO4HbR30zTKHs-zwE54LOwDGjhw9PQxPyFelbmBQP7d4n3OjBYX1rb4OaUQgxbKCdx_S2Cvqp8OWxFS2DiXSKOBaFv_YZO2V2iYL2QeYPxOXzPUl9quBDA0WKPKismgh0hlAbv4jP2OjeJvPXL9g4l5YmoOEAOtsF5nYIxDNHuRFuYduR7x33nZ77E_TvA3NQNH7zs6i6w">
+<span class="absolute top-2 left-2 bg-[#380811] text-[#fed488] font-label-caps text-[9px] uppercase px-2 py-0.5 rounded font-bold border border-[#c59a3f]/40">Hot Stay</span>
+<span class="absolute bottom-2 left-2 bg-white/95 backdrop-blur-sm text-[#2a040b] font-label-caps text-[10px] px-2 py-0.5 rounded font-bold flex items-center gap-1 border border-[#e5d8cc]">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> In Stock at Haldia Store
+</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase text-[#9c7627] font-bold">Maybelline New York</p>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5 group-hover:text-[#9c7627] transition-colors">
+SuperStay Matte Ink Liquid Lipstick
+</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1">High-pigment, smudge-proof kiss-proof liquid shade formulation available in multiple nude &amp; red shades.</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-serif text-[19px] font-bold text-[#380811]">₹699</span>
+<span class="font-body-sm text-body-sm text-[#8a7575] line-through">₹749</span>
+<span class="font-label-caps text-[10px] font-bold text-[#8e6b22] uppercase bg-[#f6ebd4] px-1.5 py-0.5 rounded border border-[#e8d5b8]">Special Price</span>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-[#eee5dc] flex flex-col gap-2">
+<a class="w-full inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded bg-[#1ebe5d] text-white font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#169d4c] transition-all shadow-sm ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20am%20interested%20in%20Maybelline%20SuperStay%20Matte%20Ink%20Lipstick%20(Rs%20699)" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span> Enquire on WhatsApp
+</a>
+<button class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded bg-[#f6efe6] text-[#380811] font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#380811] hover:text-[#fed488] transition-all border border-[#ded0c3]" onclick="alert('Item added to your Haldia Store Bag: Maybelline SuperStay (₹699)')">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Bag
+</button>
+</div>
+</div>
+<!-- Slide Item 2: Minimalist 10% Niacinamide Serum -->
+<div class="product-slide-card snap-start shrink-0 w-[84%] sm:w-[46%] lg:w-[31.6%] group bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="skincare">
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-[#faf6f0] overflow-hidden mb-3 border border-[#eee4da]">
+<img alt="Minimalist dropper bottle face serum on clean aesthetic surface" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Czd1gQMb3n06YDR7wKO9mJOtfuyEOf6pqgoAxgOegYbxRj6xVOnWVg4GUr2bXlBKTSMpMR6eByNcn5Ncq3zW7rVF947WKfgfoKoKLTNc3diZJ0zYesINnRrLVw1tnC0Q8SQrsPz1tELXYOT05y1kecuOy4UFBxU53aXObsOPbfyP7sENxOn15k50HhYWn470hIGUVsQ78jxu8hzYp-4xax__cgX1wKMVvWv28f0">
+<span class="absolute top-2 left-2 bg-[#9c7627] text-white font-label-caps text-[9px] uppercase px-2 py-0.5 rounded font-bold">Blemish Care</span>
+<span class="absolute bottom-2 left-2 bg-white/95 backdrop-blur-sm text-[#2a040b] font-label-caps text-[10px] px-2 py-0.5 rounded font-bold flex items-center gap-1 border border-[#e5d8cc]">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> In Stock at Haldia Store
+</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase text-[#9c7627] font-bold">Minimalist</p>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5 group-hover:text-[#9c7627] transition-colors">
+10% Niacinamide Serum with Zinc
+</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1">Pure vitamin B3 &amp; EUK 134 to fade acne marks, soothe inflammation, and balance excess facial sebum.</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-serif text-[19px] font-bold text-[#380811]">₹599</span>
+<span class="font-body-sm text-body-sm text-[#8a7575] line-through">₹649</span>
+<span class="font-label-caps text-[10px] font-bold text-[#8e6b22] uppercase bg-[#f6ebd4] px-1.5 py-0.5 rounded border border-[#e8d5b8]">Derm Favorite</span>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-[#eee5dc] flex flex-col gap-2">
+<a class="w-full inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded bg-[#1ebe5d] text-white font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#169d4c] transition-all shadow-sm ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20want%20to%20buy%20Minimalist%2010%20percent%20Niacinamide%20Serum%20(Rs%20599)" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span> Enquire on WhatsApp
+</a>
+<button class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded bg-[#f6efe6] text-[#380811] font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#380811] hover:text-[#fed488] transition-all border border-[#ded0c3]" onclick="alert('Item added to your Haldia Store Bag: Minimalist Niacinamide Serum (₹599)')">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Bag
+</button>
+</div>
+</div>
+<!-- Slide Item 3: Bengali Gold-Plated Polki Choker Set -->
+<div class="product-slide-card snap-start shrink-0 w-[84%] sm:w-[46%] lg:w-[31.6%] group bg-white rounded-xl border-2 border-[#c59a3f]/70 p-4 shadow-lg hover:shadow-2xl transition-all flex flex-col justify-between relative" data-category="jewellery">
+<div class="absolute -top-3 right-4 bg-[#380811] text-[#fed488] border border-[#c59a3f] px-3 py-0.5 rounded-full font-label-caps text-[9px] uppercase font-bold tracking-widest shadow">
+Flagship Bestseller
+</div>
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-[#faf6f0] overflow-hidden mb-3 border border-[#eee4da]">
+<img alt="Handcrafted gold plated Bengali Polki bridal choker necklace with pearls and matching earrings" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB99_9nSw2BewjVME89iNNhePuhaFJj5kEZQB8ORarBimC6-sdxEuJIn4F81K7elZS68uwXG2HslIKWjjv_A10knREzvlEkl3221JKoAP0rVtYa5yqp1XxDxi-JkBh8-8QJt7tDMUWDYhjyC4_cT1qTb20erKbBP-tb3-eURcUIums7PSNzIfmCu3hldxNJmQK-uWIF1_3-Li9wTN5YS1j9U2lgv06BGfOsoJPfmEA">
+<span class="absolute top-2 left-2 bg-[#701c27] text-white font-label-caps text-[9px] uppercase px-2 py-0.5 rounded font-bold">Bengali Bridal</span>
+<span class="absolute bottom-2 left-2 bg-white/95 backdrop-blur-sm text-[#2a040b] font-label-caps text-[10px] px-2 py-0.5 rounded font-bold flex items-center gap-1 border border-[#e5d8cc]">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> 3 Sets In Haldia Stock
+</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase text-[#9c7627] font-bold">Shokher Saaj Bridal Atelier</p>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5 group-hover:text-[#9c7627] transition-colors">
+Gold-Plated Polki Choker &amp; Jhumkas Set
+</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1">Hand-finished traditional Kundan-Polki work with micro-pearl latkans, perfect for Bengali weddings &amp; reception sarees.</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-serif text-[19px] font-bold text-[#380811]">₹1,850</span>
+<span class="font-body-sm text-body-sm text-[#8a7575] line-through">₹2,400</span>
+<span class="font-label-caps text-[10px] font-bold text-[#8e6b22] uppercase bg-[#f6ebd4] px-1.5 py-0.5 rounded border border-[#e8d5b8]">23% OFF</span>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-[#eee5dc] flex flex-col gap-2">
+<a class="w-full inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded bg-[#1ebe5d] text-white font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#169d4c] transition-all shadow-sm ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20want%20to%20see%20photos%20of%20Gold-Plated%20Polki%20Choker%20Set%20(Rs%201850)" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span> Enquire on WhatsApp
+</a>
+<button class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded bg-[#f6efe6] text-[#380811] font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#380811] hover:text-[#fed488] transition-all border border-[#ded0c3]" onclick="alert('Item added to your Haldia Store Bag: Polki Choker Set (₹1,850)')">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Bag
+</button>
+</div>
+</div>
+<!-- Slide Item 4: Swiss Beauty Craze Ultrasoft Matte -->
+<div class="product-slide-card snap-start shrink-0 w-[84%] sm:w-[46%] lg:w-[31.6%] group bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="cosmetics">
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-[#faf6f0] overflow-hidden mb-3 border border-[#eee4da]">
+<img alt="Swiss Beauty velvety matte liquid lipstick tube on neutral podium" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4QsZ0-ksiEzz25gZE5DKW-CknXhOZtMjhrb9laPG2y3FF9mjxu-VIUtANABiPYv7337uU0gV9TTsJU6jNfBQSqFL1iwqVtUSDx45iIbpF59Y3HY97U3J-U2IwIBNyRPkPjKTe2BBD9NxGJ3enzRENZEL05sMmqyhEz0KysKHrf80CXUkuHigtT74Zxjq5wpvHeXH_v8iJWQHuUGoy5CnBgZABSASdkt525ZX-W-A">
+<span class="absolute top-2 left-2 bg-[#9c7627] text-white font-label-caps text-[9px] uppercase px-2 py-0.5 rounded font-bold">Everyday Wear</span>
+<span class="absolute bottom-2 left-2 bg-white/95 backdrop-blur-sm text-[#2a040b] font-label-caps text-[10px] px-2 py-0.5 rounded font-bold flex items-center gap-1 border border-[#e5d8cc]">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> In Stock at Haldia Store
+</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase text-[#9c7627] font-bold">Swiss Beauty</p>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5 group-hover:text-[#9c7627] transition-colors">
+Craze Ultrasoft Matte Liquid Lipstick
+</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1">Lightweight velvet cushion texture enriched with Vitamin E. Comfortable daily wear without crusty lips.</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-serif text-[19px] font-bold text-[#380811]">₹299</span>
+<span class="font-body-sm text-body-sm text-[#8a7575] line-through">₹349</span>
+<span class="font-label-caps text-[10px] font-bold text-[#8e6b22] uppercase bg-[#f6ebd4] px-1.5 py-0.5 rounded border border-[#e8d5b8]">Budget Classic</span>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-[#eee5dc] flex flex-col gap-2">
+<a class="w-full inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded bg-[#1ebe5d] text-white font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#169d4c] transition-all shadow-sm ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20am%20enquiring%20about%20Swiss%20Beauty%20Craze%20Lipstick%20(Rs%20299)" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span> Enquire on WhatsApp
+</a>
+<button class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded bg-[#f6efe6] text-[#380811] font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#380811] hover:text-[#fed488] transition-all border border-[#ded0c3]" onclick="alert('Item added to your Haldia Store Bag: Swiss Beauty Craze Lipstick (₹299)')">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Bag
+</button>
+</div>
+</div>
+<!-- Slide Item 5: Dot & Key Watermelon Cooling Sunscreen -->
+<div class="product-slide-card snap-start shrink-0 w-[84%] sm:w-[46%] lg:w-[31.6%] group bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="skincare">
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-[#faf6f0] overflow-hidden mb-3 border border-[#eee4da]">
+<img alt="Dot and Key aesthetic watermelon sunscreen bottle with SPF 50" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS3gh-R5Gi_CKggERtEFV5BdG9KFTP-YEwIcKpp46JHcv8EClE1M3Z-0lMLaI-SB-MP86xBT8P0JTIlwlyS0ZWeXhLZWkkrLOKrRCqu00ZKtgcpPNmyTn-86Jd7GdSlH7Bv8Dzh1XYl92RS0UxtGqtJlhQjipfwwZEuSGqwN_WgPXzuRRX1BcSu60GIIJymeApy_LH_JxKho2UMPHmL_eMGcO-OomkRwJermUO3DY">
+<span class="absolute top-2 left-2 bg-[#380811] text-[#fed488] font-label-caps text-[9px] uppercase px-2 py-0.5 rounded font-bold border border-[#c59a3f]/40">SPF 50 PA+++</span>
+<span class="absolute bottom-2 left-2 bg-white/95 backdrop-blur-sm text-[#2a040b] font-label-caps text-[10px] px-2 py-0.5 rounded font-bold flex items-center gap-1 border border-[#e5d8cc]">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> In Stock at Haldia Store
+</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase text-[#9c7627] font-bold">Dot &amp; Key Skincare</p>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5 group-hover:text-[#9c7627] transition-colors">
+Watermelon Cooling Sunscreen SPF 50
+</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1">Zero white cast, ultra-refreshing water-light gel formula with hyaluronic acid, ideal for Haldia’s coastal climate.</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-serif text-[19px] font-bold text-[#380811]">₹495</span>
+<span class="font-body-sm text-body-sm text-[#8a7575] line-through">₹545</span>
+<span class="font-label-caps text-[10px] font-bold text-[#8e6b22] uppercase bg-[#f6ebd4] px-1.5 py-0.5 rounded border border-[#e8d5b8]">Summer Pick</span>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-[#eee5dc] flex flex-col gap-2">
+<a class="w-full inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded bg-[#1ebe5d] text-white font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#169d4c] transition-all shadow-sm ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20am%20enquiring%20about%20Dot%20and%20Key%20Sunscreen%20(Rs%20495)" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span> Enquire on WhatsApp
+</a>
+<button class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded bg-[#f6efe6] text-[#380811] font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#380811] hover:text-[#fed488] transition-all border border-[#ded0c3]" onclick="alert('Item added to your Haldia Store Bag: Dot and Key Sunscreen (₹495)')">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Bag
+</button>
+</div>
+</div>
+<!-- Slide Item 6: Lakmé Eyeconic Kajal Twin Pack -->
+<div class="product-slide-card snap-start shrink-0 w-[84%] sm:w-[46%] lg:w-[31.6%] group bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="accessories">
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-[#faf6f0] overflow-hidden mb-3 border border-[#eee4da]">
+<img alt="Lakmé Eyeconic black kajal pencil pair with intense matte finish" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLDY_RHR3kh2Ag5ZFtw7sQ9QwMGyF1tQJ4QMTJoba5aVElnWg6gACDGpqy2b3JkuY8cWb1Kv5weoPLxK4HPkR8CZk4tqKsBSzYt_n7vBROroFqkUi8l30SbsSj53EKS_vlo51fD0KWc4Letc7cCe95R0rUQxLm9-ar_4gVv5VYdfs_QC9xeXpxFprJVMyfEh0xfA1x7VCeX66-F5EYDP5_O3iHpl0rq6-LyBUNmO4">
+<span class="absolute top-2 left-2 bg-[#380811] text-[#fed488] font-label-caps text-[9px] uppercase px-2 py-0.5 rounded font-bold border border-[#c59a3f]/40">24H Waterproof</span>
+<span class="absolute bottom-2 left-2 bg-white/95 backdrop-blur-sm text-[#2a040b] font-label-caps text-[10px] px-2 py-0.5 rounded font-bold flex items-center gap-1 border border-[#e5d8cc]">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> In Stock at Haldia Store
+</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase text-[#9c7627] font-bold">Lakmé</p>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold mt-0.5 group-hover:text-[#9c7627] transition-colors">
+Eyeconic Kajal Deep Black (Twin Pack)
+</h3>
+<p class="font-body-sm text-[12px] text-[#6b585a] mt-1">Dermatologist tested intense jet black kajal pencil. 24-hour waterproof and smudge-proof formula.</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-serif text-[19px] font-bold text-[#380811]">₹360</span>
+<span class="font-body-sm text-body-sm text-[#8a7575] line-through">₹400</span>
+<span class="font-label-caps text-[10px] font-bold text-[#8e6b22] uppercase bg-[#f6ebd4] px-1.5 py-0.5 rounded border border-[#e8d5b8]">Twin Pack Save</span>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-[#eee5dc] flex flex-col gap-2">
+<a class="w-full inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded bg-[#1ebe5d] text-white font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#169d4c] transition-all shadow-sm ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20am%20enquiring%20about%20Lakme%20Eyeconic%20Twin%20Pack%20(Rs%20360)" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span> Enquire on WhatsApp
+</a>
+<button class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded bg-[#f6efe6] text-[#380811] font-label-caps text-[11px] uppercase tracking-wider font-bold hover:bg-[#380811] hover:text-[#fed488] transition-all border border-[#ded0c3]" onclick="alert('Item added to your Haldia Store Bag: Lakmé Eyeconic Twin Pack (₹360)')">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Bag
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Pagination Indicators -->
+<div class="flex items-center justify-center gap-2 mt-6" id="carousel-dots-container">
+<button aria-label="Go to slide 1" class="carousel-dot w-7 h-2 rounded-full bg-[#9c7627] transition-all" data-index="0" type="button"></button>
+<button aria-label="Go to slide 2" class="carousel-dot w-2 h-2 rounded-full bg-[#ded2c4] hover:bg-[#9c7627]/60 transition-all" data-index="1" type="button"></button>
+<button aria-label="Go to slide 3" class="carousel-dot w-2 h-2 rounded-full bg-[#ded2c4] hover:bg-[#9c7627]/60 transition-all" data-index="2" type="button"></button>
+<button aria-label="Go to slide 4" class="carousel-dot w-2 h-2 rounded-full bg-[#ded2c4] hover:bg-[#9c7627]/60 transition-all" data-index="3" type="button"></button>
+</div>
+</div>
+</section>
+<!-- Why Haldia Shops at Shokher Saaj (Pillars & Values) -->
+<section class="w-full bg-[#f6f2ea] py-space-xl border-t border-[#e8ded3]">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<div class="inline-flex items-center gap-2 text-[#9c7627] mb-1">
+<span class="font-serif text-sm">✧</span>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] font-bold">Our Haldia Promise</span>
+<span class="font-serif text-sm">✧</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#250409] font-serif mt-1">Why Haldia Trusts Shokher Saaj</h2>
+<p class="font-body-md text-[#5f4e50] mt-2 font-light">
+          Bridging the gap between premier metropolitan beauty counters and Purba Medinipur with authentic sourcing, localized consultation, and zero compromise on quality.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Pillar 1 -->
+<div class="bg-white p-6 rounded-xl shadow-sm border border-[#dfd3c5] hover:border-[#c59a3f] transition-all flex flex-col items-start group">
+<div class="w-12 h-12 rounded-lg bg-[#380811] text-[#fed488] border border-[#c59a3f]/40 flex items-center justify-center mb-4 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold">100% Authentic Brands</h3>
+<p class="font-body-sm text-[13px] text-[#6b585a] mt-2 leading-relaxed">
+            Direct authorized brand distributor supply only. Every lipstick, serum, and foundation is genuine, fresh batch, and sealed.
+          </p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-white p-6 rounded-xl shadow-sm border border-[#dfd3c5] hover:border-[#c59a3f] transition-all flex flex-col items-start group">
+<div class="w-12 h-12 rounded-lg bg-[#9c7627] text-white flex items-center justify-center mb-4 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">diamond</span>
+</div>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold">Bridal Saree Matching</h3>
+<p class="font-body-sm text-[13px] text-[#6b585a] mt-2 leading-relaxed">
+            Bring your wedding Benarasi or bridal lehenga to our HIT Road showroom. Our team helps match the exact Polki, Kundan, and stone hues.
+          </p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-white p-6 rounded-xl shadow-sm border border-[#dfd3c5] hover:border-[#c59a3f] transition-all flex flex-col items-start group">
+<div class="w-12 h-12 rounded-lg bg-[#380811] text-[#fed488] border border-[#c59a3f]/40 flex items-center justify-center mb-4 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold">Same-Day Haldia Delivery</h3>
+<p class="font-body-sm text-[13px] text-[#6b585a] mt-2 leading-relaxed">
+            Need emergency makeup for an evening celebration? We deliver directly across Kshudiram Nagar, Durgachak, and Township within hours.
+          </p>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-white p-6 rounded-xl shadow-sm border border-[#dfd3c5] hover:border-[#c59a3f] transition-all flex flex-col items-start group">
+<div class="w-12 h-12 rounded-lg bg-[#1ebe5d] text-white flex items-center justify-center mb-4 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<h3 class="font-title-editorial text-[18px] text-[#2a040b] font-bold">WhatsApp Video Swatches</h3>
+<p class="font-body-sm text-[13px] text-[#6b585a] mt-2 leading-relaxed">
+            Can’t drop by immediately? Text our in-store advisors for live video swatches, shade comparisons on arm skin, and live stock confirmations.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Haldia Flagship Storefront Showcase (Framing https://lh3.googleusercontent.com/aida-public/AB6AXuA9W6GStam_gsuCF22daEi2ULKm8uA4fgBOg-1adDK5OsfrBAvl97QIblT1fNJ_7IVa8dKzQjWoHJR0SdZNfcun3DT_vj_6qYN1g3xYq8POP3z8bOFCZDDC5se5CR2YZXoRBT40aeWECRLpHIAYaRFFk58NnQw1Kza2vob1K2aVz03aMKjyEL5ovuyZxbWmO0LxhErCZMerLyiiicwlOw9cGAdpvUrO-QFU18gXPRY8oxZNMJ9_-irm and https://lh3.googleusercontent.com/aida-public/AB6AXuDOn93TdoCXt4VZ9-8ylwWwNqJH2xtbF-YzLYQ9CD0fyQ2wK8eN13A4q1KfpCQi2DGLpZ22Awyt5N3ndcC7z0QyfX23Hd47QbiA9x1mfSarPxYvH9Lu5jJbcVrl8ON-Tolg9DAo5ifMu7ps4Gesd2Df_86xM9nOY9HHJkkan1ycyaVYpTUYOMWZn3-SymMGTT11RUPWZnRrVP2OeC43KfyRiiWOTq0xMc0YEA_edbcjVriMqVw_9k7f) -->
+<section class="w-full bg-[#fdfbf8] py-space-xl border-t border-b border-[#e9dfd4]" id="haldia-showroom">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="rounded-2xl overflow-hidden bg-gradient-to-br from-[#2a040b] via-[#380811] to-[#1c0206] text-[#faf3e6] shadow-2xl border-2 border-[#c59a3f]/60 grid grid-cols-1 lg:grid-cols-12">
+<!-- Left Gallery Column: Real Store Photos -->
+<div class="lg:col-span-6 relative min-h-[380px] lg:min-h-full p-6 sm:p-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-[#c59a3f]/30">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-2xl border-2 border-[#c59a3f]/50">
+<img alt="Shokher Saaj real store entrance and illuminated glass display at Kshudiram Nagar, Haldia" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9W6GStam_gsuCF22daEi2ULKm8uA4fgBOg-1adDK5OsfrBAvl97QIblT1fNJ_7IVa8dKzQjWoHJR0SdZNfcun3DT_vj_6qYN1g3xYq8POP3z8bOFCZDDC5se5CR2YZXoRBT40aeWECRLpHIAYaRFFk58NnQw1Kza2vob1K2aVz03aMKjyEL5ovuyZxbWmO0LxhErCZMerLyiiicwlOw9cGAdpvUrO-QFU18gXPRY8oxZNMJ9_-irm">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<span class="absolute top-3 left-3 bg-[#9c7627] text-white font-label-caps text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded shadow">Flagship Storefront</span>
+<span class="absolute bottom-3 left-3 text-xs text-[#fed488] font-serif italic">HIT College Road, Kshudiram Nagar</span>
+</div>
+<!-- Secondary Catalog Banner Photo https://lh3.googleusercontent.com/aida-public/AB6AXuDOn93TdoCXt4VZ9-8ylwWwNqJH2xtbF-YzLYQ9CD0fyQ2wK8eN13A4q1KfpCQi2DGLpZ22Awyt5N3ndcC7z0QyfX23Hd47QbiA9x1mfSarPxYvH9Lu5jJbcVrl8ON-Tolg9DAo5ifMu7ps4Gesd2Df_86xM9nOY9HHJkkan1ycyaVYpTUYOMWZn3-SymMGTT11RUPWZnRrVP2OeC43KfyRiiWOTq0xMc0YEA_edbcjVriMqVw_9k7f -->
+<div class="mt-4 p-3.5 rounded-xl bg-black/40 backdrop-blur-md border border-[#c59a3f]/40 flex items-center gap-3.5">
+<div class="w-14 h-16 rounded overflow-hidden flex-shrink-0 border border-[#c59a3f]/60">
+<img alt="Shokher Saaj official store sign board with department list" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOn93TdoCXt4VZ9-8ylwWwNqJH2xtbF-YzLYQ9CD0fyQ2wK8eN13A4q1KfpCQi2DGLpZ22Awyt5N3ndcC7z0QyfX23Hd47QbiA9x1mfSarPxYvH9Lu5jJbcVrl8ON-Tolg9DAo5ifMu7ps4Gesd2Df_86xM9nOY9HHJkkan1ycyaVYpTUYOMWZn3-SymMGTT11RUPWZnRrVP2OeC43KfyRiiWOTq0xMc0YEA_edbcjVriMqVw_9k7f">
+</div>
+<div class="flex-1">
+<p class="font-label-caps text-[9px] uppercase tracking-wider text-[#fed488] font-bold">All Under One Roof Guarantee</p>
+<p class="font-serif text-[#faf3e6] text-[14px] font-bold">Cosmetics • Jewellery • Bangles • Gifts</p>
+<p class="text-[11px] text-[#d6c5b8]">Official Departmental Catalog Verified</p>
+</div>
+<span class="material-symbols-outlined text-[#fed488] text-[22px]">verified</span>
+</div>
+</div>
+<!-- Right Column: Store Details & Timings -->
+<div class="lg:col-span-6 p-6 sm:p-10 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-2 text-[#fed488] font-label-caps text-[11px] uppercase tracking-widest font-bold mb-2">
+<span class="material-symbols-outlined text-[16px] text-[#fed488]">pin_drop</span> HIT College Road, Kshudiram Nagar
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-[38px] text-white font-serif leading-tight">Experience the Glamour in Person at Our Haldia Flagship.</h2>
+<p class="font-body-md text-[#dcd0c7] mt-3 leading-relaxed font-light">Located conveniently on HIT College Road in Kshudiram Nagar (near Haldia Institute of Technology campus gate). Step in to try live swatches, inspect bridal jewellery craftsmanship under high-CRI vanity lights, and receive bespoke beauty advice.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 pt-6 border-t border-white/15">
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-[#fed488] font-bold">Showroom Hours</span>
+<p class="font-serif text-white font-bold text-[16px]">10:30 AM – 9:00 PM</p>
+<p class="font-body-sm text-[12px] text-[#cbbdb4]">Open All 7 Days a Week</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-[#fed488] font-bold">Direct Assistance Desk</span>
+<p class="font-body-md text-white font-bold">+91 70015 79693</p>
+<p class="font-body-sm text-[12px] text-[#cbbdb4]">Alt: +91 82937 89168</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-[#fed488] font-bold">Exact Landmark</span>
+<p class="font-body-md text-white font-medium">Near HIT Campus Gate</p>
+<p class="font-body-sm text-[12px] text-[#cbbdb4]">HIT College Road, Kshudiram Nagar 721657</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-[#fed488] font-bold">In-Store Amenities</span>
+<p class="font-body-md text-white font-medium">Trial Mirrors &amp; AC Lounge</p>
+<p class="font-body-sm text-[12px] text-[#cbbdb4]">Convenient Front Parking</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 mt-8 pt-6 border-t border-white/15">
+<a class="inline-flex items-center gap-2 px-6 py-3 bg-[#9c7627] hover:bg-[#b08833] text-white rounded font-label-caps text-label-caps uppercase tracking-wider transition-all font-bold shadow-md" href="https://maps.google.com/?q=Haldia+Institute+of+Technology+Kshudiram+Nagar+Haldia" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span> Open Google Maps
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3 bg-[#1ebe5d] hover:bg-[#169d4c] text-white rounded font-label-caps text-label-caps uppercase tracking-wider transition-all font-bold shadow-md ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20am%20planning%20to%20visit%20your%20Haldia%20store%20today" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span> WhatsApp Desk (+91 70015 79693)
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Google Maps Location Section -->
+<section class="w-full bg-[#f6f2ea] py-space-xl border-t border-[#e8ded3] relative overflow-hidden" id="faq"><div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#fed488]/15 blur-3xl pointer-events-none"></div><div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-[#380811]/5 blur-3xl pointer-events-none"></div><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin relative z-10"><div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm"><div><div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#c59a3f]/40 text-[#380811] shadow-sm mb-3"><span class="w-1.5 h-1.5 rounded-full bg-[#9c7627]"></span><span class="font-label-caps text-[10px] tracking-[0.25em] uppercase text-[#8e6b22] font-bold">Clear Answers ◈ Transactions &amp; Visiting</span></div><h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#250409] font-serif leading-tight">Frequently Asked Questions</h2><p class="bengali-font text-[18px] text-[#701c27] font-semibold mt-1" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">“আপনার সাধারণ জিজ্ঞাসা ও উত্তর”</p><p class="font-body-md text-[#5f4e50] max-w-2xl mt-1.5 leading-relaxed">Everything you need to know about our 100% authentic brand sourcing, Kshudiram Nagar showroom timings, in-store shade testing, and same-day delivery across Haldia.</p></div><div class="flex items-center gap-3"><a class="inline-flex items-center gap-2 px-4 py-3 bg-[#1ebe5d] hover:bg-[#169d4c] text-white rounded font-label-caps text-[11px] uppercase tracking-wider font-bold transition-all shadow-md ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20have%20a%20question" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp: +91 70015 79693</span></a></div></div><div class="max-w-7xl mx-auto space-y-3.5"><details class="group rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] bg-white transition-all shadow-sm overflow-hidden"><summary class="flex items-center justify-between p-5 cursor-pointer select-none font-title-editorial text-[17px] md:text-[18px] text-[#240409] font-bold list-none gap-4 hover:bg-[#faf6f0] transition-colors"><div class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-[#fbf5eb] border border-[#e5d4c0] flex items-center justify-center text-[#9c7627] text-xs font-serif font-bold flex-shrink-0">01</span><span>Are all cosmetics, skincare, and bridal jewelry 100% authentic?</span></div><span class="material-symbols-outlined text-[#9c7627] text-[22px] transition-transform duration-300 group-open:rotate-180 flex-shrink-0">expand_more</span></summary><div class="px-5 pb-5 pt-1 text-[#554345] font-body-md text-[14px] leading-relaxed border-t border-[#eee5dc]"><p>Yes, absolutely. At Shokher Saaj (শখের সাজ), every cosmetic bottle, tube, and serum is sourced directly from certified authorized brand distributors (including Lakm, Maybelline, Minimalist, Cetaphil, Derma Co, and Swiss Beauty). Each product features tamper-evident seals and batch codes. Our bridal jewelry and traditional Shakha Pola bangles are handcrafted with genuine 22k gold filigree embossing and verified artisan brass alloys.</p></div></details><details class="group rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] bg-white transition-all shadow-sm overflow-hidden"><summary class="flex items-center justify-between p-5 cursor-pointer select-none font-title-editorial text-[17px] md:text-[18px] text-[#240409] font-bold list-none gap-4 hover:bg-[#faf6f0] transition-colors"><div class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-[#fbf5eb] border border-[#e5d4c0] flex items-center justify-center text-[#9c7627] text-xs font-serif font-bold flex-shrink-0">02</span><span>What are your store hours and weekly timings in Haldia?</span></div><span class="material-symbols-outlined text-[#9c7627] text-[22px] transition-transform duration-300 group-open:rotate-180 flex-shrink-0">expand_more</span></summary><div class="px-5 pb-5 pt-1 text-[#554345] font-body-md text-[14px] leading-relaxed border-t border-[#eee5dc]"><p>Our flagship showroom at Kshudiram Nagar, HIT College Road is open 7 Days a week from 10:30 AM to 9:00 PM (including Sundays and festivals). Whether you need an early-afternoon leisurely bridal fitting or an evening beauty run, our air-conditioned showroom and beauty consultants are ready to assist you.</p></div></details><details class="group rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] bg-white transition-all shadow-sm overflow-hidden"><summary class="flex items-center justify-between p-5 cursor-pointer select-none font-title-editorial text-[17px] md:text-[18px] text-[#240409] font-bold list-none gap-4 hover:bg-[#faf6f0] transition-colors"><div class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-[#fbf5eb] border border-[#e5d4c0] flex items-center justify-center text-[#9c7627] text-xs font-serif font-bold flex-shrink-0">03</span><span>Can I test shades or get personalized bridal jewelry matching in the store?</span></div><span class="material-symbols-outlined text-[#9c7627] text-[22px] transition-transform duration-300 group-open:rotate-180 flex-shrink-0">expand_more</span></summary><div class="px-5 pb-5 pt-1 text-[#554345] font-body-md text-[14px] leading-relaxed border-t border-[#eee5dc]"><p>Yes! We encourage in-person swatch testing at our dedicated Swatch Station. If you are preparing for a wedding or special occasion, you can bring your saree, lehenga, or dress to our HIT College Road boutique. Our stylists will help you curate matching Polki necklaces, Jhumkas, bangles, and lip shades under high-CRI vanity lighting.</p></div></details><details class="group rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] bg-white transition-all shadow-sm overflow-hidden"><summary class="flex items-center justify-between p-5 cursor-pointer select-none font-title-editorial text-[17px] md:text-[18px] text-[#240409] font-bold list-none gap-4 hover:bg-[#faf6f0] transition-colors"><div class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-[#fbf5eb] border border-[#e5d4c0] flex items-center justify-center text-[#9c7627] text-xs font-serif font-bold flex-shrink-0">04</span><span>Do you offer WhatsApp orders and delivery across Haldia?</span></div><span class="material-symbols-outlined text-[#9c7627] text-[22px] transition-transform duration-300 group-open:rotate-180 flex-shrink-0">expand_more</span></summary><div class="px-5 pb-5 pt-1 text-[#554345] font-body-md text-[14px] leading-relaxed border-t border-[#eee5dc]"><p>Yes. Customers across Haldia (including HIT Campus, Kshudiram Nagar, Durgachak, Township, and Sutahata) can order directly via WhatsApp at +91 70015 79693 or +91 81017 29767. We send live video swatches and photos of stock before dispatch, with same-day express drop-off available for urgent event needs.</p></div></details><details class="group rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] bg-white transition-all shadow-sm overflow-hidden"><summary class="flex items-center justify-between p-5 cursor-pointer select-none font-title-editorial text-[17px] md:text-[18px] text-[#240409] font-bold list-none gap-4 hover:bg-[#faf6f0] transition-colors"><div class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-[#fbf5eb] border border-[#e5d4c0] flex items-center justify-center text-[#9c7627] text-xs font-serif font-bold flex-shrink-0">05</span><span>Where exactly is the store located and how can I reach you?</span></div><span class="material-symbols-outlined text-[#9c7627] text-[22px] transition-transform duration-300 group-open:rotate-180 flex-shrink-0">expand_more</span></summary><div class="px-5 pb-5 pt-1 text-[#554345] font-body-md text-[14px] leading-relaxed border-t border-[#eee5dc]"><p>We are located at Kshudiram Nagar, on HIT College Road, Haldia, West Bengal 721657 — just a 2-minute walk from the HIT Main Campus Gate. Look for our illuminated magenta &amp; gold 'Shokher Saaj' boutique sign right on the main commercial road.</p></div></details></div></div></section><section class="w-full bg-[#fdfbf8] py-space-xl border-t border-b border-[#e9dfd4] relative overflow-hidden" id="customer-reviews"><div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#fed488]/15 blur-3xl pointer-events-none"></div><div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-[#380811]/5 blur-3xl pointer-events-none"></div><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin relative z-10"><div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm"><div><div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#c59a3f]/40 text-[#380811] shadow-sm mb-3"><span class="w-2 h-2 rounded-full bg-[#1ebe5d] animate-pulse"></span><span class="font-label-caps text-[10px] tracking-[0.22em] uppercase text-[#8e6b22] font-bold">Verified Google Feedback ◈ Haldia</span></div><h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#250409] font-serif leading-tight">Voices of Our Haldia Patrons</h2><p class="bengali-font text-[18px] text-[#701c27] font-semibold mt-1" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">“আমাদের গ্রাহকদের ভালোবাসা ও বিশ্বাস”</p><p class="font-body-md text-[#5f4e50] max-w-xl mt-1.5 leading-relaxed">Real in-store experiences, bridal consultations, and authenticity checks from our patrons across Purba Medinipur.</p></div><div class="flex flex-col sm:flex-row items-start sm:items-center gap-3"><div class="flex items-center gap-3 bg-white p-2.5 px-4 rounded-xl border border-[#ded0c3] shadow-sm"><div class="w-10 h-10 rounded-full bg-[#fef7ea] border border-[#f5d996] flex items-center justify-center"><svg class="w-5 h-5" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"></path><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.36 24 12 24z"></path><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.02 0 12s.45 3.82 1.25 5.42l4.03-3.15z"></path><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.36 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"></path></svg></div><div><div class="flex items-center gap-1.5"><span class="font-serif text-[18px] font-bold text-[#2a040b]">5.0</span><div class="flex text-[#e5be74] text-sm"><span class="material-symbols-outlined text-[16px]">star</span><span class="material-symbols-outlined text-[16px]">star</span><span class="material-symbols-outlined text-[16px]">star</span><span class="material-symbols-outlined text-[16px]">star</span><span class="material-symbols-outlined text-[16px]">star</span></div></div><p class="font-label-caps text-[9px] uppercase tracking-wider text-[#8a7575] font-semibold">100% Genuine Haldia Reviews</p></div></div><button type="button" onclick="document.getElementById('review-modal').classList.remove('hidden')" class="inline-flex items-center gap-1.5 px-4 py-3 bg-[#380811] hover:bg-[#200207] text-[#fed488] border border-[#c59a3f]/50 rounded font-label-caps text-[11px] uppercase tracking-wider font-bold transition-all shadow-md group cursor-pointer"><span class="material-symbols-outlined text-[16px] text-[#fed488] group-hover:scale-110 transition-transform">rate_review</span><span>Write a Review</span></button></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"><div class="bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:scale-[1.01]"><div><div class="flex items-center justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#380811] to-[#701c27] text-[#fed488] flex items-center justify-center font-bold font-serif text-sm ring-2 ring-[#e5be74]/30">SK</div><div><h4 class="font-serif text-[15px] font-bold text-[#2a040b] leading-tight">Sanoar Khan</h4><span class="font-label-caps text-[10px] uppercase tracking-wider text-[#9c7627] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-[#1ebe5d]">verified</span>3 Reviews • Verified Customer</span></div></div><div class="flex text-[#e5be74]"><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span></div></div><p class="font-body-md text-[#554345] text-[13px] leading-relaxed italic">“Shokher Saaj has a very nice collection. There is a good variety of cosmetics and jewelry available. The quality of the products is good and the prices are quite reasonable. The environment of the store is nice and clean. The service is also very good. I would recommend everyone to visit the store once.”</p></div><div class="pt-3 mt-4 border-t border-[#eee5dc] flex items-center justify-between text-xs text-[#8a7575]"><span class="flex items-center gap-1 font-label-caps text-[10px] uppercase tracking-wider text-[#8e6b22]"><span class="material-symbols-outlined text-[13px]">storefront</span>HIT College Road Visit</span><span class="font-body-sm text-[11px]">Google Review</span></div></div><div class="bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:scale-[1.01]"><div><div class="flex items-center justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#9c7627] to-[#e5be74] text-[#2a040b] flex items-center justify-center font-bold font-serif text-sm ring-2 ring-[#9c7627]/30">MB</div><div><h4 class="font-serif text-[15px] font-bold text-[#2a040b] leading-tight">Moni mala Ber</h4><span class="font-label-caps text-[10px] uppercase tracking-wider text-[#9c7627] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-[#1ebe5d]">verified</span>Local Shopper</span></div></div><div class="flex text-[#e5be74]"><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span></div></div><p class="bengali-font text-[#701c27] text-[15px] leading-relaxed font-medium mb-1" style="font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;">“খুব সুন্দর সুন্দর আইটেম আছে, আমি গিয়েছি আপনারা ও ঘুরে আসুন ❤”</p><p class="font-body-md text-[#554345] text-[12px] leading-relaxed italic">(Very beautiful items available, I went there and recommend you all to visit!)</p></div><div class="pt-3 mt-4 border-t border-[#eee5dc] flex items-center justify-between text-xs text-[#8a7575]"><span class="flex items-center gap-1 font-label-caps text-[10px] uppercase tracking-wider text-[#8e6b22]"><span class="material-symbols-outlined text-[13px]">favorite</span>Bridal &amp; Cosmetics Patrons</span><span class="font-body-sm text-[11px]">Google Review</span></div></div><div class="bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:scale-[1.01]"><div><div class="flex items-center justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#240409] to-[#380811] text-[#fed488] flex items-center justify-center font-bold font-serif text-sm ring-2 ring-[#c59a3f]/40">SB</div><div><h4 class="font-serif text-[15px] font-bold text-[#2a040b] leading-tight">Soumyodeep Biswas</h4><span class="font-label-caps text-[10px] uppercase tracking-wider text-[#9c7627] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-[#1ebe5d]">stars</span>Google Local Guide</span></div></div><div class="flex text-[#e5be74]"><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span></div></div><p class="font-body-md text-[#554345] text-[13px] leading-relaxed italic">“Exceptional authenticity and top brands right near HIT College Road. Genuine cosmetics with verified seal, great experience!”</p></div><div class="pt-3 mt-4 border-t border-[#eee5dc] flex items-center justify-between text-xs text-[#8a7575]"><span class="flex items-center gap-1 font-label-caps text-[10px] uppercase tracking-wider text-[#8e6b22]"><span class="material-symbols-outlined text-[13px]">verified</span>Lakmé &amp; Minimalist Certified</span><span class="font-body-sm text-[11px]">Google Review</span></div></div><div class="bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:scale-[1.01]"><div><div class="flex items-center justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#701c27] to-[#9c7627] text-white flex items-center justify-center font-bold font-serif text-sm ring-2 ring-[#e5be74]/30">SK</div><div><h4 class="font-serif text-[15px] font-bold text-[#2a040b] leading-tight">Sirajul Khan</h4><span class="font-label-caps text-[10px] uppercase tracking-wider text-[#9c7627] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-[#1ebe5d]">verified</span>Bridal Customer</span></div></div><div class="flex text-[#e5be74]"><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span></div></div><p class="font-body-md text-[#554345] text-[13px] leading-relaxed italic">“Brilliant bridal collection, Shakha Pola and necklace sets are exquisite. Very polite staff and honest pricing.”</p></div><div class="pt-3 mt-4 border-t border-[#eee5dc] flex items-center justify-between text-xs text-[#8a7575]"><span class="flex items-center gap-1 font-label-caps text-[10px] uppercase tracking-wider text-[#8e6b22]"><span class="material-symbols-outlined text-[13px]">diamond</span>Shakha Pola &amp; Chokers</span><span class="font-body-sm text-[11px]">Google Review</span></div></div><div class="bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:scale-[1.01]"><div><div class="flex items-center justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#380811] to-[#240409] text-[#fed488] flex items-center justify-center font-bold font-serif text-sm ring-2 ring-[#c59a3f]/30">PD</div><div><h4 class="font-serif text-[15px] font-bold text-[#2a040b] leading-tight">Pabitra Dolai</h4><span class="font-label-caps text-[10px] uppercase tracking-wider text-[#9c7627] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-[#1ebe5d]">verified</span>HIT Campus Shopper</span></div></div><div class="flex text-[#e5be74]"><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span></div></div><p class="font-body-md text-[#554345] text-[13px] leading-relaxed italic">“Best cosmetic and gift shop near HIT Haldia campus. Great discounts and friendly owners.”</p></div><div class="pt-3 mt-4 border-t border-[#eee5dc] flex items-center justify-between text-xs text-[#8a7575]"><span class="flex items-center gap-1 font-label-caps text-[10px] uppercase tracking-wider text-[#8e6b22]"><span class="material-symbols-outlined text-[13px]">school</span>Campus Favorite</span><span class="font-body-sm text-[11px]">Google Review</span></div></div><div class="bg-white rounded-xl border border-[#ded2c4] hover:border-[#c59a3f] p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:scale-[1.01]"><div><div class="flex items-center justify-between mb-3"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#9c7627] to-[#380811] text-[#fed488] flex items-center justify-center font-bold font-serif text-sm ring-2 ring-[#c59a3f]/30">SA</div><div><h4 class="font-serif text-[15px] font-bold text-[#2a040b] leading-tight">Sumanta &amp; Ajgar</h4><span class="font-label-caps text-[10px] uppercase tracking-wider text-[#9c7627] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-[#1ebe5d]">verified</span>Kshudiram Nagar Residents</span></div></div><div class="flex text-[#e5be74]"><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span><span class="material-symbols-outlined text-[15px]">star</span></div></div><p class="font-body-md text-[#554345] text-[13px] leading-relaxed italic">“Nice 👍 Authentic quality products and prompt service. Highly recommended in Kshudiram Nagar.”</p></div><div class="pt-3 mt-4 border-t border-[#eee5dc] flex items-center justify-between text-xs text-[#8a7575]"><span class="flex items-center gap-1 font-label-caps text-[10px] uppercase tracking-wider text-[#8e6b22]"><span class="material-symbols-outlined text-[13px]">thumb_up</span>Prompt Assistance</span><span class="font-body-sm text-[11px]">Google Review</span></div></div></div><div class="mt-8 pt-6 border-t border-[#ded2c4] flex flex-col sm:flex-row items-center justify-between gap-4"><div class="flex items-center gap-2 text-xs font-label-caps text-[#6b585a]"><span class="material-symbols-outlined text-[16px] text-[#1ebe5d]">check_circle</span><span>All reviews aggregated directly from Google Maps &amp; in-store feedback</span></div><a class="inline-flex items-center gap-2 text-xs font-label-caps uppercase text-[#380811] hover:text-[#9c7627] font-bold tracking-wider underline decoration-[#9c7627] underline-offset-4 transition-colors" href="https://maps.google.com/?q=Haldia+Institute+of+Technology+Kshudiram+Nagar+Haldia" target="_blank"><span>View All Reviews on Google Maps</span><span class="material-symbols-outlined text-[15px]">open_in_new</span></a></div></div><div id="review-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"><div class="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl border-2 border-[#c59a3f]/60 p-6 md:p-8"><button type="button" onclick="document.getElementById('review-modal').classList.add('hidden')" class="absolute top-4 right-4 text-[#8a7575] hover:text-[#380811] transition-colors"><span class="material-symbols-outlined text-[24px]">close</span></button><div class="flex items-center gap-2.5 mb-2"><div class="w-8 h-8 rounded-full bg-[#fef7ea] border border-[#f5d996] flex items-center justify-center"><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"></path><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.36 24 12 24z"></path><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.02 0 12s.45 3.82 1.25 5.42l4.03-3.15z"></path><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.36 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"></path></svg></div><span class="font-label-caps text-[11px] uppercase tracking-wider text-[#9c7627] font-bold">Rate Shokher Saaj</span></div><h3 class="font-headline-sm text-[22px] text-[#240409] font-serif font-bold">Share Your Store Experience</h3><p class="font-body-sm text-[12px] text-[#6b585a] mt-1 mb-4">Help other shoppers in Haldia discover genuine cosmetics and bridal jewelry.</p><form onsubmit="event.preventDefault(); alert('Thank you for your rating! We appreciate your support for Shokher Saaj.'); document.getElementById('review-modal').classList.add('hidden');" class="space-y-4"><div><label class="block font-label-caps text-[11px] uppercase tracking-wider text-[#380811] font-bold mb-1">Your Rating</label><div class="flex items-center gap-1.5 text-[#e5be74] text-2xl"><span class="material-symbols-outlined text-[24px] cursor-pointer hover:scale-110 transition-transform">star</span><span class="material-symbols-outlined text-[24px] cursor-pointer hover:scale-110 transition-transform">star</span><span class="material-symbols-outlined text-[24px] cursor-pointer hover:scale-110 transition-transform">star</span><span class="material-symbols-outlined text-[24px] cursor-pointer hover:scale-110 transition-transform">star</span><span class="material-symbols-outlined text-[24px] cursor-pointer hover:scale-110 transition-transform">star</span></div></div><div><label class="block font-label-caps text-[11px] uppercase tracking-wider text-[#380811] font-bold mb-1">Your Name</label><input type="text" required="" placeholder="e.g. Suman Roy" class="w-full px-3.5 py-2.5 rounded-lg border border-[#ded2c4] bg-[#fbf9f5] focus:outline-none focus:border-[#9c7627] text-sm text-[#240409]"></div><div><label class="block font-label-caps text-[11px] uppercase tracking-wider text-[#380811] font-bold mb-1">Your Review / Feedback</label><textarea required="" rows="3" placeholder="Tell us about your experience with our cosmetics, bridal sets, or service..." class="w-full px-3.5 py-2.5 rounded-lg border border-[#ded2c4] bg-[#fbf9f5] focus:outline-none focus:border-[#9c7627] text-sm text-[#240409]"></textarea></div><div class="flex flex-col sm:flex-row gap-2.5 pt-2"><button type="submit" class="flex-1 py-3 px-4 bg-[#380811] hover:bg-[#200207] text-[#fed488] rounded-lg font-label-caps text-[11px] uppercase tracking-wider font-bold transition-all shadow-md">Submit Review</button><a href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20I%20would%20like%20to%20share%20my%20feedback" target="_blank" class="flex-1 py-3 px-4 bg-[#1ebe5d] hover:bg-[#169d4c] text-white rounded-lg font-label-caps text-[11px] uppercase tracking-wider font-bold transition-all text-center flex items-center justify-center gap-1"><span class="material-symbols-outlined text-[16px]">chat</span>Send via WhatsApp</a></div></form></div></div></section><section class="w-full bg-[#f6f2ea] py-space-xl" id="map-location">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<div class="inline-flex items-center gap-2 text-[#9c7627] mb-1">
+<span class="font-serif text-sm">✧</span>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] font-bold">Visit Our Physical Store in Haldia</span>
+<span class="font-serif text-sm">✧</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#250409] font-serif mt-1">Find Us in Haldia <span class="bengali-font font-bold text-[#701c27] text-[24px] md:text-[28px] ml-2" style="font-family: &quot;Noto Serif Bengali&quot;, &quot;Tiro Bangla&quot;, serif;">◈ শখের সাজ শোরুম ◈</span></h2>
+<p class="font-body-md text-[#5f4e50] mt-2 font-light">Located on HIT College Road, Kshudiram Nagar — easily accessible from HIT Main Gate, City Centre, and Haldia Township.</p>
+</div>
+<!-- Transit Landmarks -->
+<div class="flex flex-wrap items-center justify-center gap-2.5 mb-8">
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-[#dfd2c4] shadow-sm text-[#443335] font-label-caps text-[11px] uppercase">
+<span class="material-symbols-outlined text-[#9c7627] text-[16px]">directions_walk</span><span>HIT Campus Gate — 250m (2 min walk)</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-[#dfd2c4] shadow-sm text-[#443335] font-label-caps text-[11px] uppercase">
+<span class="material-symbols-outlined text-[#9c7627] text-[16px]">storefront</span><span>Kshudiram Market — 300m</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-[#dfd2c4] shadow-sm text-[#443335] font-label-caps text-[11px] uppercase">
+<span class="material-symbols-outlined text-[#9c7627] text-[16px]">local_shipping</span><span>Haldia City Centre — 3.2 km</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-[#dfd2c4] shadow-sm text-[#443335] font-label-caps text-[11px] uppercase">
+<span class="material-symbols-outlined text-[#9c7627] text-[16px]">train</span><span>Haldia Railway Station — 4.5 km</span>
+</div>
+</div>
+<!-- Map Layout -->
+<div class="rounded-2xl overflow-hidden bg-white border-2 border-[#c59a3f]/50 shadow-2xl grid grid-cols-1 lg:grid-cols-12">
+<div class="lg:col-span-7 relative min-h-[380px] lg:min-h-[460px] bg-[#f4ece3]">
+<img alt="Shokher Saaj Haldia Store Location Map" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEiSFkM6JPm2f9ERcbKpSEgII1mqz9foK7XLJWltt_3202W5aouvUFJT0bk_JT8T1dc0Pg_PCRxbnYRQbihZOOXvroVxZbIc9OEAMFIk3LRmXISE7hTIrP8xRiQ0Q-aIGPFjWapIM36nHC66S_Ij2vXBPa1Rzh6Z0sCkEXy2YQhGk2zwaix6YftpW550MjP_5sQ0WkX0hSk1Ti5sANqjcH6sg5ow-xYoPo519Kwm0">
+<div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-[#c59a3f]/40 shadow-sm flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+<span class="font-label-caps text-[10px] text-[#380811] font-bold uppercase tracking-wider">Live Haldia Store Location</span>
+</div>
+</div>
+<div class="lg:col-span-5 p-6 sm:p-8 flex flex-col justify-between bg-white border-t lg:border-t-0 lg:border-l border-[#ded2c4]">
+<div>
+<div class="flex items-center justify-between gap-2 mb-3">
+<div class="flex flex-col">
+<span class="font-serif text-[22px] text-[#2a040b] font-bold">Shokher Saaj</span>
+<span class="font-label-caps text-[11px] text-[#9c7627] tracking-widest uppercase font-bold mt-0.5">শখের সাজ • Haldia Flagship</span>
+</div>
+<span class="px-3 py-1 rounded bg-[#f6ebd4] text-[#8e6b22] font-label-caps text-[10px] font-bold uppercase tracking-wider border border-[#e8d5b8]">HIT Road</span>
+</div>
+<div class="space-y-3 pt-3 border-t border-[#eee5dc]">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#9c7627] text-[19px] mt-0.5">location_on</span>
+<div class="text-left">
+<p class="font-body-md text-[#2a040b] font-bold">HIT College Road, Kshudiram Nagar</p>
+<p class="font-body-sm text-[#6b585a] text-[12px]">Haldia, Purba Medinipur, West Bengal 721657</p>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#9c7627] text-[19px] mt-0.5">near_me</span>
+<div class="text-left">
+<p class="font-label-caps text-[10px] uppercase text-[#9c7627] font-bold tracking-wider">Prime Landmark</p>
+<p class="font-body-sm text-[#6b585a] text-[12px]">2 mins walk from Haldia Institute of Technology (HIT) Main Gate</p>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#9c7627] text-[19px] mt-0.5">schedule</span>
+<div class="text-left">
+<p class="font-body-md text-[#2a040b] font-bold">Open 7 Days a Week</p>
+<p class="font-body-sm text-[#6b585a] text-[12px]">10:30 AM – 9:00 PM (Daily walk-in trials &amp; swatches)</p>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#9c7627] text-[19px] mt-0.5">call</span>
+<div class="text-left">
+<p class="font-label-caps text-[10px] uppercase text-[#9c7627] font-bold tracking-wider">Direct Helpline</p>
+<p class="font-body-sm text-[#380811] font-bold">+91 70015 79693 / 82937 89168</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2.5 pt-6 mt-4 border-t border-[#eee5dc]">
+<a class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded bg-[#380811] text-[#fed488] border border-[#c59a3f]/50 font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#200207] transition-all shadow-md font-bold" href="https://www.google.com/maps/dir/?api=1&amp;destination=HIT+College+Road+Kshudiram+Nagar+Haldia+West+Bengal+721657" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>Get Directions on Google Maps
+</a>
+<a class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded bg-[#1ebe5d] text-white font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#169d4c] transition-all shadow-sm font-bold ring-1 ring-white/20" href="https://wa.me/917001579693?text=Hello%20Shokher%20Saaj,%20please%20share%20your%20live%20Google%20Map%20location%20on%20HIT%20College%20Road" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp for Live Location (+91 70015 79693)
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bengali Cultural Banner -->
+<div class="w-full bg-[#240409] py-4 text-center border-t border-[#9c7627]/40"><div class="max-w-7xl mx-auto px-margin-mobile flex items-center justify-center gap-6 flex-wrap text-[#fed488] font-label-caps text-label-caps uppercase tracking-[0.22em] text-xs"><span>◈ Haldia Flagship Atelier</span><span class="bengali-font font-bold tracking-normal normal-case text-base text-[#fbe1a8]" style="font-family: &quot;Noto Serif Bengali&quot;, &quot;Tiro Bangla&quot;, serif;">“আপনার সাজ, আমাদের স্টাইলিং” — শখের সাজ</span><span class="hidden md:inline">◈ HIT College Road ◈</span><span>+91 70015 79693</span></div></div>
+</div></main><footer class="w-full bg-[#180205] text-[#bdaeab] pt-space-xl pb-space-lg border-t-2 border-[#9c7627]/40"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl border-b border-white/10"><div class="space-y-space-md"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-[#2e050c] border border-[#c59a3f]/60 flex items-center justify-center text-[#fed488] font-serif font-bold text-xs">SS</div><span class="font-serif text-[22px] text-white font-bold tracking-tight">Shokher Saaj</span></div><p class="bengali-font text-[17px] text-[#fed488] italic">“সাজ হোক নিজের মনের মতো”</p><p class="font-body-md text-[13px] text-[#b6a4a0] leading-relaxed">Haldia’s premier destination for original branded cosmetics, bridal makeup essentials, certified skincare formulations, and hand-finished artificial jewellery.</p><div class="flex flex-col gap-2 pt-2 text-xs"><div class="flex items-center gap-2 text-[#fed488]"><span class="material-symbols-outlined text-[17px]">verified</span><span class="font-label-caps text-[10px] uppercase tracking-wider text-[#e8ded3]">100% Authentic Product Sourcing</span></div><div class="flex items-center gap-2 text-[#fed488]"><span class="material-symbols-outlined text-[17px]">store</span><span class="font-label-caps text-[10px] uppercase tracking-wider text-[#e8ded3]">Purba Medinipur Trusted Retailer</span></div></div></div><div class="space-y-space-md"><h4 class="font-serif text-[17px] text-white font-bold tracking-wide">Product Categories</h4><ul class="space-y-2 font-body-md text-[13px]"><li class="hover:text-[#fed488] transition-colors"><a data-path="shop" href="#store-categories">Cosmetics &amp; Lipsticks</a></li><li class="hover:text-[#fed488] transition-colors"><a data-path="shop" href="#store-categories">Face &amp; Eye Makeup</a></li><li class="hover:text-[#fed488] transition-colors"><a data-path="shop" href="#store-categories">Targeted Skincare Serums</a></li><li class="hover:text-[#fed488] transition-colors"><a data-path="shop" href="#store-categories">Bridal &amp; Polki Jewellery</a></li><li class="hover:text-[#fed488] transition-colors"><a data-path="shop" href="#store-categories">Brushes &amp; Beauty Accessories</a></li></ul></div><div class="space-y-space-md"><h4 class="font-serif text-[17px] text-white font-bold tracking-wide">Haldia Store Location</h4><div class="space-y-2.5 text-[#b6a4a0] text-[13px]"><p class="flex items-start gap-2"><span class="material-symbols-outlined text-[#fed488] text-[18px] mt-0.5">pin_drop</span><span>HIT College Road, Kshudiram Nagar,<br>Haldia, West Bengal 721657</span></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-[#fed488] text-[18px]">schedule</span><span>Monday – Sunday: 10:30 AM – 9:00 PM</span></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-[#fed488] text-[18px]">call</span><a class="hover:text-white transition-colors" href="tel:+917001579693">+91 70015 79693 / 82937 89168</a></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-[#1ebe5d] text-[18px]">chat</span><a class="hover:text-white text-[#1ebe5d] transition-colors font-semibold" href="https://wa.me/917001579693" target="_blank">WhatsApp +91 70015 79693</a></p></div><div class="pt-2 flex flex-col sm:flex-row gap-2"><a class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 bg-[#9c7627] hover:bg-[#b08833] text-white rounded font-label-caps text-[11px] uppercase tracking-wider transition-all font-bold" href="tel:+917001579693"><span class="material-symbols-outlined text-[15px]">call</span>Call Store</a><a class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 bg-[#1ebe5d] hover:bg-[#169d4c] text-white rounded font-label-caps text-[11px] uppercase tracking-wider transition-all font-bold ring-1 ring-white/20" href="https://wa.me/917001579693" target="_blank"><span class="material-symbols-outlined text-[15px]">chat</span>WhatsApp</a></div></div><div class="space-y-space-md"><h4 class="font-serif text-[17px] text-white font-bold tracking-wide">Visit &amp; Enquiries</h4><p class="font-body-md text-[13px] text-[#b6a4a0]">Need product availability or bridal shade-matching queries before visiting our HIT College Road store? Reach out on WhatsApp directly.</p><div class="p-4 rounded-lg bg-[#26050b] border border-[#c59a3f]/30 space-y-2"><p class="font-label-caps text-[10px] uppercase text-[#fed488] tracking-widest font-bold">Instant Concierge</p><p class="font-body-sm text-[12px] text-[#b6a4a0]">Chat with our store staff for product checks, pricing, and directions.</p><a class="inline-flex items-center gap-1.5 font-label-caps text-[11px] uppercase text-white underline underline-offset-4 hover:text-[#fed488] transition-colors pt-1" data-path="contact" href="#map-location">Get Google Maps Directions →</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-[#9e8c89] font-body-sm text-xs"><div class="flex flex-wrap items-center gap-x-6 gap-y-2"><p>© 2025 Shokher Saaj (শখের সাজ) Cosmetics &amp; Jewellery Store. HIT College Road, Kshudiram Nagar, Haldia 721657.</p><a class="hover:text-white transition-colors" data-path="contact" href="#map-location">Store Directions</a><a class="hover:text-white transition-colors" data-path="about" href="#haldia-showroom">About Us</a></div><div class="flex items-center gap-2 text-[#fed488]"><span class="font-label-caps text-[10px] uppercase tracking-wider text-[#d4c3bf] mr-2">In-Store &amp; Online:</span><span class="px-2 py-1 bg-[#26050b] rounded text-[11px] font-semibold text-[#fed488] border border-[#c59a3f]/30">UPI / GPay / PhonePe</span><span class="px-2 py-1 bg-[#26050b] rounded text-[11px] font-semibold text-[#fed488] border border-[#c59a3f]/30">Cash</span><span class="px-2 py-1 bg-[#26050b] rounded text-[11px] font-semibold text-[#fed488] border border-[#c59a3f]/30">Cards</span></div></div></div></footer>
+<script>
+  // Product Showcase Interactive Carousel Logic
+  document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.getElementById('product-carousel');
+    const prevBtn = document.getElementById('slider-prev-btn');
+    const nextBtn = document.getElementById('slider-next-btn');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const slideCards = document.querySelectorAll('.product-slide-card');
+
+    if (!carousel) return;
+
+    const getScrollStep = () => {
+      const firstCard = carousel.querySelector('.product-slide-card:not(.hidden)');
+      if (!firstCard) return carousel.clientWidth * 0.8;
+      const style = window.getComputedStyle(carousel);
+      const gap = parseFloat(style.columnGap || style.gap || '24');
+      return firstCard.offsetWidth + gap;
+    };
+
+    const updateDots = () => {
+      if (!dots.length) return;
+      const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+      if (maxScroll <= 0) return;
+      const scrollFraction = carousel.scrollLeft / maxScroll;
+      const activeIdx = Math.min(dots.length - 1, Math.round(scrollFraction * (dots.length - 1)));
+      dots.forEach((dot, idx) => {
+        if (idx === activeIdx) {
+          dot.classList.remove('w-2', 'bg-[#ded2c4]');
+          dot.classList.add('w-7', 'bg-[#9c7627]');
+        } else {
+          dot.classList.remove('w-7', 'bg-[#9c7627]');
+          dot.classList.add('w-2', 'bg-[#ded2c4]');
+        }
+      });
+    };
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+      });
+    }
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+        const targetScroll = (maxScroll / (dots.length - 1)) * idx;
+        carousel.scrollTo({ left: targetScroll, behavior: 'smooth' });
+      });
+    });
+
+    carousel.addEventListener('scroll', () => {
+      window.requestAnimationFrame(updateDots);
+    });
+
+    // Touch & Mouse Drag to Scroll
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+
+    carousel.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - carousel.offsetLeft;
+      scrollLeft = carousel.scrollLeft;
+    });
+
+    window.addEventListener('mouseup', () => {
+      isDown = false;
+    });
+
+    carousel.addEventListener('mouseleave', () => {
+      isDown = false;
+    });
+
+    carousel.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      carousel.scrollLeft = scrollLeft - walk;
+    });
+
+    // Filter pills functionality
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => {
+          p.classList.remove('active', 'bg-[#380811]', 'text-[#fed488]', 'border-[#c59a3f]/50');
+          p.classList.add('bg-white', 'border-[#ded2c4]', 'text-[#635153]');
+        });
+        pill.classList.remove('bg-white', 'border-[#ded2c4]', 'text-[#635153]');
+        pill.classList.add('active', 'bg-[#380811]', 'text-[#fed488]', 'border-[#c59a3f]/50');
+
+        const cat = pill.getAttribute('data-category');
+        slideCards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          if (cat === 'all' || cardCat === cat) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+        setTimeout(updateDots, 300);
+      });
+    });
+  });
+</script>
+
+
+<script>
+  (function() {
+    function initDeptFilters() {
+      const tabsContainer = document.getElementById('dept-filter-tabs');
+      const cardsGrid = document.getElementById('dept-cards-grid');
+      if (!tabsContainer || !cardsGrid) return;
+
+      const tabs = tabsContainer.querySelectorAll('[data-dept-filter]');
+      const cards = cardsGrid.querySelectorAll('[data-dept-card]');
+
+      tabsContainer.addEventListener('click', (e) => {
+        const clickedBtn = e.target.closest('[data-dept-filter]');
+        if (!clickedBtn) return;
+
+        const filterVal = clickedBtn.getAttribute('data-dept-filter');
+
+        tabs.forEach(btn => {
+          btn.classList.remove('active', 'bg-[#380811]', 'text-[#fed488]', 'border-[#c59a3f]/50', 'shadow-sm', 'font-bold');
+          btn.classList.add('bg-white/90', 'text-[#635153]', 'border-[#ded2c4]', 'font-semibold');
+        });
+
+        clickedBtn.classList.remove('bg-white/90', 'text-[#635153]', 'border-[#ded2c4]', 'font-semibold');
+        clickedBtn.classList.add('active', 'bg-[#380811]', 'text-[#fed488]', 'border-[#c59a3f]/50', 'shadow-sm', 'font-bold');
+
+        cards.forEach(card => {
+          const cardCategory = card.getAttribute('data-dept-card');
+          if (filterVal === 'all' || cardCategory === filterVal) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initDeptFilters);
+    } else {
+      initDeptFilters();
+    }
+  })();
+</script>
+
+</body></html>
